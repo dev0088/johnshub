@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./node_modules/react-gauge-chart/dist/GaugeChart/style.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA","file":"css/stylesheets.css","sourcesContent":[".percent-text{\r\n  text-anchor: middle;\r\n  font-family: 'Roboto', sans-serif;\r\n}\r\n"],"sourceRoot":""}

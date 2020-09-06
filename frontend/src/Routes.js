@@ -207,7 +207,23 @@ const Routes = () => {
       <AnimatePresence>
         <Suspense fallback={<SuspenseLoading />}>
           <Switch>
-            <Redirect exact from="/" to="/DashboardDefault" />
+            <Redirect exact from="/" to="/LandingPage" />
+            
+            <Route path={['/LandingPage']}>
+              <PresentationLayout>
+                <Switch location={location} key={location.pathname}>
+                  <motion.div
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={pageVariants}
+                    transition={pageTransition}>
+                    <Route path="/LandingPage" component={LandingPage} />
+                  </motion.div>
+                </Switch>
+              </PresentationLayout>
+            </Route>
+
             <Route
               path={[
                 '/DashboardDefault',
@@ -495,20 +511,6 @@ const Routes = () => {
                   </motion.div>
                 </Switch>
               </LeftSidebar>
-            </Route>
-            <Route path={['/LandingPage']}>
-              <PresentationLayout>
-                <Switch location={location} key={location.pathname}>
-                  <motion.div
-                    initial="initial"
-                    animate="in"
-                    exit="out"
-                    variants={pageVariants}
-                    transition={pageTransition}>
-                    <Route path="/LandingPage" component={LandingPage} />
-                  </motion.div>
-                </Switch>
-              </PresentationLayout>
             </Route>
 
             <Route
