@@ -1,4 +1,4 @@
-Komikaru Backend
+Djang Backend + React.js Frontend
 
 ================================
 
@@ -11,6 +11,10 @@ Komikaru Backend
 	- JWT auth based RESTful API
 	
 	- Social authentication for Facebook, Google and Twitter
+
+	- React.js
+
+	- Material UI framework (Dashboard style)
 
 ### Create server
 
@@ -40,6 +44,19 @@ Komikaru Backend
 	$ ./manage.py createsuperuser
 	```
 
+### Build frontend
+	```
+		$ cd fronend
+		$ yarn install
+		$ yarn run build
+	```
+  
+	if you want to run this frontend as debug mode
+	```
+		$ yarn start
+	```
+	and connect to http://localhost:9000/
+
 ### Run server
 	```
 	$ ./manage.py runserver
@@ -52,6 +69,8 @@ Komikaru Backend
 - http://127.0.0.1:8000/apis/
 
 - http://127.0.0.1:8000/api-docs/
+
+- http://127.0.0.1:8000/dashboard/
 
 
 ### Deployment
