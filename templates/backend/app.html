@@ -1,0 +1,36 @@
+{% load static %}
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Johnshub</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- <link rel="stylesheet" type="text/css" href="{% static "css/stylesheets.css" %}"> -->
+        <link href="{% static "css/stylesheets.css" %}" rel="stylesheet">
+        <link href="{% static "css/main.css" %}" rel="stylesheet"></head>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+        <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <noscript>This application requires javascript to function.</noscript>
+        <div id="root"></div>
+        <!-- <script src="{% static "js/vendor.bundle.js" %}"></script> -->
+        <script>
+        window.django = {
+            csrf: "{{ csrf_token }}",
+            urls: {
+                logout: "{% url "logout" %}",
+                staticRoot: "{% static "" %}",
+            },
+        };
+        </script>
+
+        <script type="text/javascript" src="{% static "js/stylesheets.js" %}" async></script>
+        <script type="text/javascript" src="{% static "js/main.js" %}" async></script></body>
+    </body>
+</html>
