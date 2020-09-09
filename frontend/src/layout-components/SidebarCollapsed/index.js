@@ -78,7 +78,7 @@ const SidebarCollapsed = props => {
             <div className="sidebar-collapsed-logo">
               <Box
                 className="header-logo-wrapper"
-                title="Carolina React Admin Dashboard with Material-UI PRO">
+                title="Johnshub React Admin Dashboard with Material-UI PRO">
                 <Link
                   to="/DashboardDefault"
                   className="header-logo-wrapper-link">
@@ -88,7 +88,7 @@ const SidebarCollapsed = props => {
                     className="header-logo-wrapper-btn">
                     <img
                       className="app-sidebar-logo"
-                      alt="Carolina React Admin Dashboard with Material-UI PRO"
+                      alt="Johnshub React Admin Dashboard with Material-UI PRO"
                       src={projectLogo}
                     />
                   </IconButton>

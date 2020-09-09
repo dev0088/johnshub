@@ -43,8 +43,8 @@ const LandingPage = () => {
   };
   return (
     <Fragment>
-      <HeaderHome />
       <div className="hero-wrapper bg-composed-wrapper bg-white">
+        <HeaderHome />
         <div className="flex-grow-1 w-100 d-flex align-items-center">
           <div
             className="bg-composed-wrapper--image bg-composed-filter-rm opacity-9"

@@ -20,7 +20,7 @@ const HeaderLogo = props => {
         })}>
         <Box
           className="header-logo-wrapper"
-          title="Carolina React Admin Dashboard with Material-UI PRO">
+          title="Johnshub React Admin Dashboard with Material-UI PRO">
           <Link to="/DashboardDefault" className="header-logo-wrapper-link">
             <IconButton
               color="primary"
@@ -28,12 +28,12 @@ const HeaderLogo = props => {
               className="header-logo-wrapper-btn">
               <img
                 className="app-header-logo-img"
-                alt="Carolina React Admin Dashboard with Material-UI PRO"
+                alt="Johnshub React Admin Dashboard with Material-UI PRO"
                 src={projectLogo}
               />
             </IconButton>
           </Link>
-          <Box className="header-logo-text">Carolina</Box>
+          <Box className="header-logo-text">Johnshub</Box>
         </Box>
       </div>
     </Fragment>

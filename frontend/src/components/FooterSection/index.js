@@ -11,122 +11,125 @@ import {
   Tooltip,
 } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import MailOutlineTwoToneIcon from '@material-ui/icons/MailOutlineTwoTone';
+import projectLogo from '../../assets/images/logo.png';
+import appleStoreImage from '../../assets/images/home/app-store.png';
+import playStoreImage from '../../assets/images/home/play-store.png';
 
 const FooterSection = () => {
   return (
     <Fragment>
       <div className="bg-first py-5">
-        <div>
-          <Container maxWidth="md" className="text-center">
-            <h1 className="display-3 mb-4 text-white font-weight-bold">
-              Stay up to date
-            </h1>
-            <p className="font-size-lg text-white-50">
-              Follow us on any of our social media accounts to find out when we
-              release new products or updates.
-            </p>
-          </Container>
-          <div className="divider border-2 d-sm-none d-md-block rounded-circle border-white bg-white opacity-1 mx-auto mb-4 mt-5 w-50" />
-          <div className="d-flex justify-content-center">
-            <Tooltip arrow title="Facebook">
-              <IconButton
-                className="nav-link text-white-50"
-                href="https:&#x2F;&#x2F;www.facebook.com&#x2F;UiFort"
-                rel="noopener nofollow"
-                target="_blank">
-                <span className="btn-wrapper--icon">
-                  <FontAwesomeIcon
-                    icon={['fab', 'facebook']}
-                    className="font-size-xxl"
-                  />
-                </span>
-              </IconButton>
-            </Tooltip>
-            <Tooltip arrow title="Twitter">
-              <IconButton
-                className="nav-link text-white-50"
-                href="https:&#x2F;&#x2F;twitter.com&#x2F;uifort1"
-                rel="noopener nofollow"
-                target="_blank">
-                <span className="btn-wrapper--icon">
-                  <FontAwesomeIcon
-                    icon={['fab', 'twitter']}
-                    className="font-size-xxl"
-                  />
-                </span>
-              </IconButton>
-            </Tooltip>
-            <Tooltip arrow title="Instagram">
-              <IconButton
-                className="nav-link text-white-50"
-                href="https:&#x2F;&#x2F;www.instagram.com&#x2F;uifort1"
-                rel="noopener nofollow"
-                target="_blank">
-                <span className="btn-wrapper--icon">
-                  <FontAwesomeIcon
-                    icon={['fab', 'instagram']}
-                    className="font-size-xxl"
-                  />
-                </span>
-              </IconButton>
-            </Tooltip>
-            <Tooltip arrow title="Discord">
-              <IconButton
-                className="nav-link text-white-50"
-                href="https:&#x2F;&#x2F;discord.gg&#x2F;mddFBQX"
-                rel="noopener nofollow"
-                target="_blank">
-                <span className="btn-wrapper--icon">
-                  <FontAwesomeIcon
-                    icon={['fab', 'discord']}
-                    className="font-size-xxl"
-                  />
-                </span>
-              </IconButton>
-            </Tooltip>
-            <Tooltip arrow title="Dribbble">
-              <IconButton
-                className="nav-link text-white-50"
-                href="https:&#x2F;&#x2F;dribbble.com&#x2F;UiFort"
-                rel="noopener nofollow"
-                target="_blank">
-                <span className="btn-wrapper--icon">
-                  <FontAwesomeIcon
-                    icon={['fab', 'dribbble']}
-                    className="font-size-xxl"
-                  />
-                </span>
-              </IconButton>
-            </Tooltip>
-            <Tooltip arrow title="Github">
-              <IconButton
-                className="nav-link text-white-50"
-                href="https:&#x2F;&#x2F;github.com&#x2F;uifort"
-                rel="noopener nofollow"
-                target="_blank">
-                <span className="btn-wrapper--icon">
-                  <FontAwesomeIcon
-                    icon={['fab', 'github']}
-                    className="font-size-xxl"
-                  />
-                </span>
-              </IconButton>
-            </Tooltip>
-          </div>
-          <div className="divider border-2 d-sm-none d-md-block rounded-circle border-white bg-white opacity-1 mx-auto my-4 w-50" />
-          <div className="mt-5">
-            <span className="text-center d-block text-white-50">
-              Copyright &copy; 2020 -{' '}
-              <a
-                className="text-white"
-                href="https://uifort.com"
-                title="UiFort">
-                Johnshub
-              </a>
-            </span>
-          </div>
-        </div>
+      <Container>
+        <Grid container spacing={0}>
+          <Grid item xs={12} md={6}>
+            <Container maxWidth="md">
+              <div className="d-flex mb-2 justify-content-start">
+                <a href="/Home" class="logo">
+                  <img alt="JOHNSHUB" src={projectLogo}/>
+                </a>
+              </div>
+              <div className="d-flex mb-2 justify-content-start">
+                <a href="/Home">
+                  <h5 className="display-5 mb-4 text-white font-weight-normal font-italic header-johnshub-title">
+                    Your first move
+                  </h5>
+                </a>
+              </div>
+              <div className="d-flex justify-content-start">
+              <Tooltip arrow title="Facebook">
+                <IconButton
+                  className="nav-link text-white-50"
+                  href="https:&#x2F;&#x2F;www.facebook.com&#x2F;UiFort"
+                  rel="noopener nofollow"
+                  target="_blank">
+                  <span className="btn-wrapper--icon">
+                    <FontAwesomeIcon
+                      icon={['fab', 'facebook']}
+                      className="font-size-xxl"
+                    />
+                  </span>
+                </IconButton>
+              </Tooltip>
+              <Tooltip arrow title="Twitter">
+                <IconButton
+                  className="nav-link text-white-50"
+                  href="https:&#x2F;&#x2F;twitter.com&#x2F;uifort1"
+                  rel="noopener nofollow"
+                  target="_blank">
+                  <span className="btn-wrapper--icon">
+                    <FontAwesomeIcon
+                      icon={['fab', 'twitter']}
+                      className="font-size-xxl"
+                    />
+                  </span>
+                </IconButton>
+              </Tooltip>
+              <Tooltip arrow title="Linkedin">
+                <IconButton
+                  className="nav-link text-white-50"
+                  href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;uifort1"
+                  rel="noopener nofollow"
+                  target="_blank">
+                  <span className="btn-wrapper--icon">
+                    <FontAwesomeIcon
+                      icon={['fab', 'linkedin']}
+                      className="font-size-xxl"
+                    />
+                  </span>
+                </IconButton>
+              </Tooltip>
+              <Tooltip arrow title="Youtubu">
+                <IconButton
+                  className="nav-link text-white-50"
+                  href="https:&#x2F;&#x2F;youtubu.com&#x2F;uifort1"
+                  rel="noopener nofollow"
+                  target="_blank">
+                  <span className="btn-wrapper--icon">
+                    <FontAwesomeIcon
+                      icon={['fab', 'youtube']}
+                      className="font-size-xxl"
+                    />
+                  </span>
+                </IconButton>
+              </Tooltip>
+            </div>
+            </Container>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Container maxWidth="md">
+              <div className="d-flex mb-4 justify-content-end">
+                <a href="#"><img src={appleStoreImage} /></a>
+                <a href="#"><img src={playStoreImage} /></a>
+              </div>
+              <div className="list-outer">
+                <div className="list-item">
+                  <a href="#">Advertise with us</a>
+                </div>
+                <div className="list-item">
+                  <a href="#">About us</a>
+                </div>
+                <div className="list-item">
+                  <a href="#">Feedback</a>
+                </div>
+                <div className="list-item">
+                  <a href="#">Contact us</a>
+                </div>
+              </div>
+              <div className="list-outer">
+                <div className="list-item">
+                  <a href="#">Terms of use</a>
+                </div>
+                <div className="list-item">
+                  <a href="#">Privacy</a>
+                </div>
+                <div className="list-item">
+                  <a href="#"> &copy;2020 Johnshub</a>
+                </div>
+              </div>
+            </Container>
+          </Grid>
+        </Grid>
+      </Container>
       </div>
     </Fragment>
   );

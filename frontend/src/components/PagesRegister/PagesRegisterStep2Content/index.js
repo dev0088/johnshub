@@ -4,12 +4,18 @@ import {
   Container,
   Button,
   TextField,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle
 } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const PagesRegisterStep2Content = (props) => {
   const [userValue, setUserValue] = React.useState({...props.userInfo});
+  const [showAlert, setShowAlert] = React.useState(false);
 
   const handleChangeField = (name, event) => {
     setUserValue({
@@ -20,7 +26,16 @@ const PagesRegisterStep2Content = (props) => {
 
   const handleCreateAccount = () => {
     console.log('===== this: ', userValue);
-    props.onClickRegister(userValue);
+    if(userValue.password1 === userValue.password2) {
+      props.onClickRegister(userValue);
+      return;
+    } else {
+      setShowAlert(true);
+    }
+  }
+
+  const handleCloseAlert = () => {
+    setShowAlert(false);
   }
   
   return (
@@ -114,6 +129,25 @@ const PagesRegisterStep2Content = (props) => {
           </div>
         </div>
       </div>
+      <Dialog
+        open={showAlert}
+        onClose={handleCloseAlert}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">{"Are you sure?"}</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            The confirm password isn't same with the password.
+            Please re-enter password.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCloseAlert} color="primary" autoFocus>
+            Ok
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Fragment>
   );
 };

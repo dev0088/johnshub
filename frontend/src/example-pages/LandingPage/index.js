@@ -60,14 +60,14 @@ const LandingPage = () => {
               <div className="nav-logo">
                 <Link
                   to="/DashboardDefault"
-                  title="Carolina React Admin Dashboard with Material-UI PRO">
+                  title="Johnshub React Admin Dashboard with Material-UI PRO">
                   <i className="bg-white">
                     <img
-                      alt="Carolina React Admin Dashboard with Material-UI PRO"
+                      alt="Johnshub React Admin Dashboard with Material-UI PRO"
                       src={projectLogo}
                     />
                   </i>
-                  <span>Carolina</span>
+                  <span>Johnshub</span>
                 </Link>
               </div>
             </div>
@@ -144,9 +144,9 @@ const LandingPage = () => {
                         href="#/"
                         onClick={e => e.preventDefault()}
                         className="navbar-brand d-flex align-items-center d-40"
-                        title="Carolina React Admin Dashboard with Material-UI PRO">
+                        title="Johnshub React Admin Dashboard with Material-UI PRO">
                         <img
-                          alt="Carolina React Admin Dashboard with Material-UI PRO"
+                          alt="Johnshub React Admin Dashboard with Material-UI PRO"
                           className="d-block img-fluid"
                           src={projectLogo}
                         />
@@ -344,7 +344,7 @@ const LandingPage = () => {
                     </div>
                     <div className="text-black mt-3">
                       <h1 className="display-2 mb-3 font-weight-bold">
-                        Carolina React Admin Dashboard with Material-UI PRO
+                        Johnshub React Admin Dashboard with Material-UI PRO
                       </h1>
                       <p className="font-size-lg text-black-50">
                         With this premium admin dashboard template you can
@@ -365,7 +365,7 @@ const LandingPage = () => {
                           className="py-3 px-5 mt-2"
                           color="primary"
                           variant="contained"
-                          title="View Carolina React Admin Dashboard with Material-UI PRO Live Preview">
+                          title="View Johnshub React Admin Dashboard with Material-UI PRO Live Preview">
                           <span className="btn-wrapper--label">Live Demo</span>
                           <span className="btn-wrapper--icon">
                             <FontAwesomeIcon icon={['fas', 'arrow-right']} />
@@ -379,7 +379,7 @@ const LandingPage = () => {
                           href="https://themes.material-ui.com/themes/carolina-react-admin-dashboard-pro"
                           rel="noopener"
                           target="_blank"
-                          title="Read about what Carolina React Admin Dashboard with Material-UI PRO has to offer!">
+                          title="Read about what Johnshub React Admin Dashboard with Material-UI PRO has to offer!">
                           <span className="btn-wrapper--icon">
                             <FontAwesomeIcon
                               icon={['fas', 'external-link-alt']}
@@ -433,7 +433,7 @@ const LandingPage = () => {
                     Simple to use
                   </h3>
                   <p className="card-text mb-0">
-                    Carolina has a modular architecture, which makes it a breeze
+                    Johnshub has a modular architecture, which makes it a breeze
                     to implement and customise.
                   </p>
                 </Card>
@@ -477,7 +477,7 @@ const LandingPage = () => {
                   UI Elements
                 </h3>
                 <p className="text-black-50 mt-2 mb-0">
-                  Carolina features easy to use, easy to integrate user
+                  Johnshub features easy to use, easy to integrate user
                   interface elements, widgets and components. Over 200 UI comps
                   included.
                 </p>
@@ -594,7 +594,7 @@ const LandingPage = () => {
               className="py-3 px-5 mx-2"
               color="primary"
               variant="contained"
-              title="View Carolina React Admin Dashboard with Material-UI PRO Live Preview">
+              title="View Johnshub React Admin Dashboard with Material-UI PRO Live Preview">
               <span className="btn-wrapper--label">Live Demo</span>
               <span className="btn-wrapper--icon">
                 <FontAwesomeIcon icon={['fas', 'arrow-right']} />
@@ -608,7 +608,7 @@ const LandingPage = () => {
               href="https://themes.material-ui.com/themes/carolina-react-admin-dashboard-pro"
               rel="noopener"
               target="_blank"
-              title="Read about what Carolina React Admin Dashboard with Material-UI PRO has to offer!">
+              title="Read about what Johnshub React Admin Dashboard with Material-UI PRO has to offer!">
               <span className="btn-wrapper--icon">
                 <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
               </span>
@@ -658,7 +658,7 @@ const LandingPage = () => {
               className="py-3 px-5 mx-2"
               color="primary"
               variant="contained"
-              title="View Carolina React Admin Dashboard with Material-UI PRO Live Preview">
+              title="View Johnshub React Admin Dashboard with Material-UI PRO Live Preview">
               <span className="btn-wrapper--label">Live Demo</span>
               <span className="btn-wrapper--icon">
                 <FontAwesomeIcon icon={['fas', 'arrow-right']} />
@@ -672,7 +672,7 @@ const LandingPage = () => {
               href="https://themes.material-ui.com/themes/carolina-react-admin-dashboard-pro"
               rel="noopener"
               target="_blank"
-              title="Read about what Carolina React Admin Dashboard with Material-UI PRO has to offer!">
+              title="Read about what Johnshub React Admin Dashboard with Material-UI PRO has to offer!">
               <span className="btn-wrapper--icon">
                 <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
               </span>
@@ -697,7 +697,7 @@ const LandingPage = () => {
                       The FREE open-source version!
                     </h1>
                     <p className="font-size-lg text-black-50">
-                      There's also a free version of Carolina React Admin
+                      There's also a free version of Johnshub React Admin
                       Dashboard with Material-UI PRO, released under a MIT
                       license, which doesn't include all the wonderful features,
                       but can be pretty useful for smaller projects.
@@ -743,7 +743,7 @@ const LandingPage = () => {
               className="py-3 px-5 mx-2"
               color="primary"
               variant="contained"
-              title="View Carolina React Admin Dashboard with Material-UI PRO Live Preview">
+              title="View Johnshub React Admin Dashboard with Material-UI PRO Live Preview">
               <span className="btn-wrapper--label">Live Demo</span>
               <span className="btn-wrapper--icon">
                 <FontAwesomeIcon icon={['fas', 'arrow-right']} />
@@ -757,7 +757,7 @@ const LandingPage = () => {
               href="https://themes.material-ui.com/themes/carolina-react-admin-dashboard-pro"
               rel="noopener"
               target="_blank"
-              title="Read about what Carolina React Admin Dashboard with Material-UI PRO has to offer!">
+              title="Read about what Johnshub React Admin Dashboard with Material-UI PRO has to offer!">
               <span className="btn-wrapper--icon">
                 <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
               </span>
@@ -774,11 +774,11 @@ const LandingPage = () => {
         <Container fixed className="py-5">
           <Container maxWidth="md" className="px-0 text-center">
             <h1 className="display-3 mb-4 font-weight-bold">
-              Carolina Admin Dashboard Template is available for multiple
+              Johnshub Admin Dashboard Template is available for multiple
               frameworks
             </h1>
             <p className="font-size-lg text-black-50">
-              Carolina is also available with integrations for the following
+              Johnshub is also available with integrations for the following
               frontend/backend frameworks:
             </p>
           </Container>
@@ -787,11 +787,11 @@ const LandingPage = () => {
               <a
                 className="card card-box card-box-hover-rise px-2 pt-2 pb-3 m-3"
                 href="https://themes.material-ui.com/themes/carolina-react-admin-dashboard-pro"
-                title="Click to visit the presentation page for Carolina React version">
-                <b>Carolina for React</b>
+                title="Click to visit the presentation page for Johnshub React version">
+                <b>Johnshub for React</b>
                 <img
                   src="https://demo.uifort.com/github-static-assets/framework-logo/react-framework-logo.png"
-                  alt="Carolina React Admin Dashboard with Material-UI PRO"
+                  alt="Johnshub React Admin Dashboard with Material-UI PRO"
                 />
                 <span className="text-black-50 details-helper">
                   Click for details
@@ -800,10 +800,10 @@ const LandingPage = () => {
             </div>
             <div>
               <div className="card card-box px-2 pt-2 pb-3 m-3 opacity-6">
-                <b>Carolina for Angular</b>
+                <b>Johnshub for Angular</b>
                 <img
                   src="https://demo.uifort.com/github-static-assets/framework-logo/angular-framework-logo.png"
-                  alt="Carolina for Angular"
+                  alt="Johnshub for Angular"
                 />
                 <i className="details-helper text-black-50">
                   Not yet available
@@ -812,10 +812,10 @@ const LandingPage = () => {
             </div>
             <div>
               <div className="card card-box px-2 pt-2 pb-3 m-3 opacity-6">
-                <b>Carolina for Vue.js</b>
+                <b>Johnshub for Vue.js</b>
                 <img
                   src="https://demo.uifort.com/github-static-assets/framework-logo/vue-framework-logo.png"
-                  alt="Carolina for Vue.js"
+                  alt="Johnshub for Vue.js"
                 />
                 <i className="details-helper text-black-50">
                   Not yet available
@@ -824,10 +824,10 @@ const LandingPage = () => {
             </div>
             <div>
               <div className="card card-box px-2 pt-2 pb-3 m-3 opacity-6">
-                <b>Carolina for HTML5/jQuery</b>
+                <b>Johnshub for HTML5/jQuery</b>
                 <img
                   src="https://demo.uifort.com/github-static-assets/framework-logo/html-framework-logo.png"
-                  alt="Carolina for HTML5/jQuery"
+                  alt="Johnshub for HTML5/jQuery"
                 />
                 <i className="details-helper text-black-50">
                   Not yet available
@@ -836,10 +836,10 @@ const LandingPage = () => {
             </div>
             <div>
               <div className="card card-box px-2 pt-2 pb-3 m-3 opacity-6">
-                <b>Carolina for Laravel</b>
+                <b>Johnshub for Laravel</b>
                 <img
                   src="https://demo.uifort.com/github-static-assets/framework-logo/laravel-framework-logo.png"
-                  alt="Carolina for Laravel"
+                  alt="Johnshub for Laravel"
                 />
                 <i className="details-helper text-black-50">
                   Not yet available
@@ -848,10 +848,10 @@ const LandingPage = () => {
             </div>
             <div>
               <div className="card card-box px-2 pt-2 pb-3 m-3 opacity-6">
-                <b>Carolina for Node.js</b>
+                <b>Johnshub for Node.js</b>
                 <img
                   src="https://demo.uifort.com/github-static-assets/framework-logo/nodejs-framework-logo.png"
-                  alt="Carolina for Node.js"
+                  alt="Johnshub for Node.js"
                 />
                 <i className="details-helper text-black-50">
                   Not yet available
@@ -860,10 +860,10 @@ const LandingPage = () => {
             </div>
             <div>
               <div className="card card-box px-2 pt-2 pb-3 m-3 opacity-6">
-                <b>Carolina for ASP.NET</b>
+                <b>Johnshub for ASP.NET</b>
                 <img
                   src="https://demo.uifort.com/github-static-assets/framework-logo/asp-framework-logo.png"
-                  alt="Carolina for ASP.NET"
+                  alt="Johnshub for ASP.NET"
                 />
                 <i className="details-helper text-black-50">
                   Not yet available
@@ -872,10 +872,10 @@ const LandingPage = () => {
             </div>
             <div>
               <div className="card card-box px-2 pt-2 pb-3 m-3 opacity-6">
-                <b>Carolina for Nuxt.js</b>
+                <b>Johnshub for Nuxt.js</b>
                 <img
                   src="https://demo.uifort.com/github-static-assets/framework-logo/nuxtjs-framework-logo.png"
-                  alt="Carolina for Nuxt.js"
+                  alt="Johnshub for Nuxt.js"
                 />
                 <i className="details-helper text-black-50">
                   Not yet available
@@ -884,10 +884,10 @@ const LandingPage = () => {
             </div>
             <div>
               <div className="card card-box px-2 pt-2 pb-3 m-3 opacity-6">
-                <b>Carolina for Next.js</b>
+                <b>Johnshub for Next.js</b>
                 <img
                   src="https://demo.uifort.com/github-static-assets/framework-logo/nextjs-framework-logo.png"
-                  alt="Carolina for Next.js"
+                  alt="Johnshub for Next.js"
                 />
                 <i className="details-helper text-black-50">
                   Not yet available
@@ -896,10 +896,10 @@ const LandingPage = () => {
             </div>
             <div>
               <div className="card card-box px-2 pt-2 pb-3 m-3 opacity-6">
-                <b>Carolina for React Native</b>
+                <b>Johnshub for React Native</b>
                 <img
                   src="https://demo.uifort.com/github-static-assets/framework-logo/react-native-framework-logo.png"
-                  alt="Carolina for React Native"
+                  alt="Johnshub for React Native"
                 />
                 <i className="details-helper text-black-50">
                   Not yet available
@@ -908,10 +908,10 @@ const LandingPage = () => {
             </div>
             <div>
               <div className="card card-box px-2 pt-2 pb-3 m-3 opacity-6">
-                <b>Carolina for Flutter</b>
+                <b>Johnshub for Flutter</b>
                 <img
                   src="https://demo.uifort.com/github-static-assets/framework-logo/flutter-framework-logo.png"
-                  alt="Carolina for Flutter"
+                  alt="Johnshub for Flutter"
                 />
                 <i className="details-helper text-black-50">
                   Not yet available

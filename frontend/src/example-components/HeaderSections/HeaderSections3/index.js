@@ -38,14 +38,14 @@ const LivePreviewExample = () => {
             <a
               href="#/"
               onClick={e => e.preventDefault()}
-              title="Carolina React Admin Dashboard with Material-UI PRO">
+              title="Johnshub React Admin Dashboard with Material-UI PRO">
               <i className="bg-white">
                 <img
-                  alt="Carolina React Admin Dashboard with Material-UI PRO"
+                  alt="Johnshub React Admin Dashboard with Material-UI PRO"
                   src={projectLogo}
                 />
               </i>
-              <span>Carolina</span>
+              <span>Johnshub</span>
             </a>
           </div>
         </div>
@@ -97,9 +97,9 @@ const LivePreviewExample = () => {
                     href="#/"
                     onClick={e => e.preventDefault()}
                     className="navbar-brand d-flex align-items-center d-40"
-                    title="Carolina React Admin Dashboard with Material-UI PRO">
+                    title="Johnshub React Admin Dashboard with Material-UI PRO">
                     <img
-                      alt="Carolina React Admin Dashboard with Material-UI PRO"
+                      alt="Johnshub React Admin Dashboard with Material-UI PRO"
                       className="d-block img-fluid"
                       src={projectLogo}
                     />

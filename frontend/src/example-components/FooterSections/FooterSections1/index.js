@@ -21,10 +21,10 @@ export default function LivePreviewExample() {
                     href="#/"
                     onClick={e => e.preventDefault()}
                     className="d-block"
-                    title="Carolina React Admin Dashboard with Material-UI PRO">
+                    title="Johnshub React Admin Dashboard with Material-UI PRO">
                     <i className="m-0 d-50">
                       <img
-                        alt="Carolina React Admin Dashboard with Material-UI PRO"
+                        alt="Johnshub React Admin Dashboard with Material-UI PRO"
                         src={projectLogo}
                       />
                     </i>

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
@@ -123,7 +123,13 @@ export default function HeaderUserbox() {
             <Divider className="w-100 mt-2" />
             <ListItem button>My Account</ListItem>
             <ListItem button>Profile settings</ListItem>
-            <ListItem button>Active tasks</ListItem>
+            <ListItem button>
+              <Link
+                to="/Home"
+                className="d-flex ">
+                  Log out
+              </Link>
+            </ListItem>
             <Divider className="w-100" />
             <ListItem className="p-0">
               <div className="grid-menu grid-menu-2col w-100">

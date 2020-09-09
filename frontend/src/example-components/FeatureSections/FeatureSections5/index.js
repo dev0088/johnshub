@@ -20,7 +20,7 @@ export default function LivePreviewExample() {
                   <span className="badge badge-warning badge-pill">
                     Latest release
                   </span>
-                  <h1 className="display-3 mt-3 font-weight-bold">Carolina</h1>
+                  <h1 className="display-3 mt-3 font-weight-bold">Johnshub</h1>
                   <div className="divider border-2 mx-auto mx-xl-0 my-3 border-light w-43" />
                   <p className="font-size-lg text-black-50">
                     Travelling day in and day out. Doing business like this

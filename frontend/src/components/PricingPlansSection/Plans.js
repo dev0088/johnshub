@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Button,
   Card,
@@ -24,7 +25,9 @@ const Plans = () => {
             <Button
               color="primary"
               variant="contained"
-              className="pricing-one-btn pricing-button">
+              className="pricing-one-btn pricing-button"
+              component={Link}
+              to="/Register">
                 <span className="btn-wrapper--label font-weight-bold pricing-button-label">Get Free Accoutn Now</span>
             </Button>
           </CardContent>
@@ -43,10 +46,15 @@ const Plans = () => {
               Pay annually to view unlimited customer submissions for a one time charge. Includes Business Vetting Service.
               <a href="/pricing-plan-vendor" className="know-more"><span>i</span>Know more</a>
             </p>
-            <Button color="primary" variant="outlined" className="pricing-button">
-              <span className="btn-wrapper--label font-weight-bold pricing-button-label">
-                Get Pro Now
-              </span>
+            <Button
+              color="primary"
+              variant="outlined"
+              className="pricing-button"
+              component={Link}
+              to="/Register">
+                <span className="btn-wrapper--label font-weight-bold pricing-button-label">
+                  Get Pro Now
+                </span>
             </Button>
           </CardContent>
         </Card>

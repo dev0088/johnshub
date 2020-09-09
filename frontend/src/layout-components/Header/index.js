@@ -54,7 +54,7 @@ const Header = props => {
           <Hidden lgUp>
             <Box
               className="app-logo-wrapper"
-              title="Carolina React Admin Dashboard with Material-UI PRO">
+              title="Johnshub React Admin Dashboard with Material-UI PRO">
               <Link to="/DashboardDefault" className="app-logo-link">
                 <IconButton
                   color="primary"
@@ -62,13 +62,13 @@ const Header = props => {
                   className="app-logo-btn">
                   <img
                     className="app-logo-img"
-                    alt="Carolina React Admin Dashboard with Material-UI PRO"
+                    alt="Johnshub React Admin Dashboard with Material-UI PRO"
                     src={projectLogo}
                   />
                 </IconButton>
               </Link>
               <Hidden smDown>
-                <Box className="app-logo-text">Carolina</Box>
+                <Box className="app-logo-text">Johnshub</Box>
               </Hidden>
             </Box>
           </Hidden>

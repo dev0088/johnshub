@@ -37,50 +37,23 @@ const LivePreviewExample = () => {
       <div className="header-nav-wrapper header-nav-wrapper-lg w-100 px-4 navbar-dark bg-midnight-bloom">
         <Container className="d-flex" fixed>
           <div className="header-nav-logo align-items-center d-flex justify-content-start">
-            <div className="nav-logo">
+            <div className="nav-logo font-italic">
               <Link
                 to="/Home"
                 title="JOHNSHUB">
-                <i className="bg-white">
+                <i className="bg-white header-johnshub-logo">
                   <img
                     alt="JOHNSHUB"
                     src={projectLogo}
+                    className="header-johnshub-logo"
                   />
                 </i>
-                <span>Your first move</span>
+                <span className="header-johnshub-title">Your first move</span>
               </Link>
             </div>
           </div>
           <div className="header-nav-menu d-none d-lg-block">
-            <div className="d-flex justify-content-center text-white">
-              <Button
-                color="inherit"
-                className="btn-inverse px-3 mx-1 py-2 text-capitalize"
-                component={Link}
-                to="/DashboardDefault">
-                Dashboards
-              </Button>
-              <Button
-                color="inherit"
-                className="btn-inverse px-3 mx-1 py-2 text-capitalize"
-                component={Link}
-                to="/ApplicationsChat">
-                App
-              </Button>
-              <Button
-                color="inherit"
-                className="btn-inverse px-3 mx-1 py-2 text-capitalize"
-                component={Link}
-                to="/RegularTables2">
-                Tables
-              </Button>
-              <Button
-                color="inherit"
-                className="btn-inverse px-3 mx-1 py-2 text-capitalize"
-                component={Link}
-                to="/FormsWizard">
-                Forms
-              </Button>
+            <div className="d-flex justify-content-end text-white">
               <Button
                 color="inherit"
                 className="btn-inverse px-3 mx-1 py-2 text-capitalize"
@@ -134,9 +107,9 @@ const LivePreviewExample = () => {
                       href="#/"
                       onClick={e => e.preventDefault()}
                       className="navbar-brand d-flex align-items-center d-40"
-                      title="Carolina React Admin Dashboard with Material-UI PRO">
+                      title="Johnshub React Admin Dashboard with Material-UI PRO">
                       <img
-                        alt="Carolina React Admin Dashboard with Material-UI PRO"
+                        alt="Johnshub React Admin Dashboard with Material-UI PRO"
                         className="d-block img-fluid"
                         src={projectLogo}
                       />
@@ -152,7 +125,7 @@ const LivePreviewExample = () => {
               <Divider />
               <ListItem className="d-block py-3 px-2">
                 <Link
-                  to="/DashboardDefault"
+                  to="/PricingPlanVendor"
                   className="d-flex px-2 align-items-center dropdown-item rounded">
                   <div className="align-box-row w-100">
                     <div className="mr-3">
@@ -162,11 +135,8 @@ const LivePreviewExample = () => {
                     </div>
                     <div className="text-truncate max-w-70 overflow-hidden">
                       <div className="font-weight-bold text-primary d-block">
-                        Dashboards
+                        Are you service provider?
                       </div>
-                      <span className="text-black-50">
-                        12 different dashboards to choose from
-                      </span>
                     </div>
                     <div className="ml-auto card-hover-indicator align-self-center">
                       <FontAwesomeIcon
@@ -180,7 +150,7 @@ const LivePreviewExample = () => {
               <Divider />
               <ListItem className="d-block py-3 px-2">
                 <Link
-                  to="/ApplicationsChat"
+                  to="/Login"
                   className="d-flex px-2 align-items-center dropdown-item rounded">
                   <div className="align-box-row w-100">
                     <div className="mr-3">
@@ -190,11 +160,8 @@ const LivePreviewExample = () => {
                     </div>
                     <div className="text-truncate max-w-70 overflow-hidden">
                       <div className="font-weight-bold text-primary d-block">
-                        Apps
+                        Login
                       </div>
-                      <span className="text-black-50">
-                        Multiple application designs included
-                      </span>
                     </div>
                     <div className="ml-auto card-hover-indicator align-self-center">
                       <FontAwesomeIcon
@@ -208,7 +175,7 @@ const LivePreviewExample = () => {
               <Divider />
               <ListItem className="d-block py-3 px-2">
                 <Link
-                  to="/Cards3"
+                  to="/Register"
                   className="d-flex px-2 align-items-center dropdown-item rounded">
                   <div className="align-box-row w-100">
                     <div className="mr-3">
@@ -218,11 +185,8 @@ const LivePreviewExample = () => {
                     </div>
                     <div className="text-truncate max-w-70 overflow-hidden">
                       <div className="font-weight-bold text-primary d-block">
-                        Cards
+                        Create free account 
                       </div>
-                      <span className="text-black-50">
-                        Over 300 different cards available
-                      </span>
                     </div>
                     <div className="ml-auto card-hover-indicator align-self-center">
                       <FontAwesomeIcon
@@ -234,71 +198,6 @@ const LivePreviewExample = () => {
                 </Link>
               </ListItem>
               <Divider />
-              <ListItem className="d-block py-3 px-2">
-                <Link
-                  to="/RegularTables"
-                  className="d-flex px-2 align-items-center dropdown-item rounded">
-                  <div className="align-box-row w-100">
-                    <div className="mr-3">
-                      <div className="bg-happy-green text-center text-white d-40 rounded-circle">
-                        <FontAwesomeIcon icon={['fas', 'table']} />
-                      </div>
-                    </div>
-                    <div className="text-truncate max-w-70 overflow-hidden">
-                      <div className="font-weight-bold text-primary d-block">
-                        Tables
-                      </div>
-                      <span className="text-black-50">
-                        Multiple, easy to customise tables
-                      </span>
-                    </div>
-                    <div className="ml-auto card-hover-indicator align-self-center">
-                      <FontAwesomeIcon
-                        icon={['fas', 'chevron-right']}
-                        className="font-size-lg"
-                      />
-                    </div>
-                  </div>
-                </Link>
-              </ListItem>
-              <Divider />
-              <ListItem className="d-block py-3 px-2">
-                <Link
-                  to="/FormsWizard"
-                  className="d-flex px-2 align-items-center dropdown-item rounded">
-                  <div className="align-box-row w-100">
-                    <div className="mr-3">
-                      <div className="bg-skim-blue text-center text-white d-40 rounded-circle">
-                        <FontAwesomeIcon icon={['fas', 'align-center']} />
-                      </div>
-                    </div>
-                    <div className="text-truncate max-w-70 overflow-hidden">
-                      <div className="font-weight-bold text-primary d-block">
-                        Forms
-                      </div>
-                      <span className="text-black-50">
-                        Over 50 forms elements included
-                      </span>
-                    </div>
-                    <div className="ml-auto card-hover-indicator align-self-center">
-                      <FontAwesomeIcon
-                        icon={['fas', 'chevron-right']}
-                        className="font-size-lg"
-                      />
-                    </div>
-                  </div>
-                </Link>
-              </ListItem>
-              <Divider />
-              <ListItem className="d-block py-3 px-2">
-                <Button
-                  href="/DashboardDefault"
-                  className="text-white w-100"
-                  variant="contained"
-                  color="secondary">
-                  View Live Demo
-                </Button>
-              </ListItem>
             </List>
           </Drawer>
         </Container>

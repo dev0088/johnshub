@@ -50,7 +50,7 @@ export default function LivePreviewExample() {
                   </div>
                   <div className="text-black mt-3">
                     <h1 className="display-2 mb-3 font-weight-bold">
-                      Carolina React Admin Dashboard with Material-UI PRO
+                      Johnshub React Admin Dashboard with Material-UI PRO
                     </h1>
                     <p className="font-size-lg text-black-50">
                       With this premium admin dashboard template you can create

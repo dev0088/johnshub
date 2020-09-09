@@ -17,7 +17,7 @@ const PricingPlansSection = () => {
             Pricing Plans
           </h2>
           <Plans />
-          <p className="font-size-lg">Are you a service provider? please see <a href="/pricing-plan-vendor">vendor pricing</a> here for details on businesses to appear on johnshub.</p>
+          <p className="font-size-lg">Are you a service provider? please see <a href="/PricingPlanVendor">vendor pricing</a> here for details on businesses to appear on johnshub.</p>
         </Container>
       </div>
     </Fragment>

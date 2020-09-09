@@ -12,6 +12,19 @@
   }
 
   // Logo
+  .header-johnshub-logo {
+    width: 100%!important;
+  }
+
+  .header-johnshub-title {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: .2em;
+    color: #fff;
+    margin-left: 15px;
+    width: 385px;
+  }
 
   .header-nav-logo {
     flex: 1;
