@@ -1,4 +1,4 @@
-export default {
-  // apiGatewayServerURL:'https://johnshub.com/api/v1',
-  apiGatewayServerURL:'http://localhost:8000/api/v1',
+export const restApiSettings = {
+  // baseURL:'https://johnshub.com/api/v1',
+  baseURL:'http://localhost:8000/api/v1',
 }

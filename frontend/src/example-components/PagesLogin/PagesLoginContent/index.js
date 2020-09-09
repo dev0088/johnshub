@@ -39,11 +39,11 @@ const LivePreviewExample = () => {
             color="primary"
             component={RouterLink}
             className="btn-go-back"
-            to="/DashboardDefault">
+            to="/Home">
             <span className="btn-wrapper--icon">
               <FontAwesomeIcon icon={['fas', 'arrow-left']} />
             </span>
-            <span className="btn-wrapper--label">Back to dashboard</span>
+            <span className="btn-wrapper--label">Back to home</span>
           </Button>
           <div className="app-content p-0">
             <div className="app-content--inner d-flex align-items-center">

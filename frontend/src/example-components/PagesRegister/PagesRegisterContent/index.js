@@ -148,14 +148,14 @@ const LivePreviewExample = () => {
                                   variant="contained"
                                   color="primary"
                                   component={RouterLink}
-                                  to="/DashboardDefault">
+                                  to="/Home">
                                   <span className="btn-wrapper--icon">
                                     <FontAwesomeIcon
                                       icon={['fas', 'arrow-left']}
                                     />
                                   </span>
                                   <span className="btn-wrapper--label">
-                                    Back to dashboard
+                                    Back to home
                                   </span>
                                 </Button>
                               </div>

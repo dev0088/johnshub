@@ -340,7 +340,7 @@ export default [
       {
         "label": "Landing page",
         "description": "",
-        "to": "/LandingPage"
+        "to": "/Home"
       },
       {
         "label": "Feature sections",

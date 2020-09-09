@@ -160,6 +160,13 @@ const SparklinesCharts = lazy(() => import('./example-pages/SparklinesCharts'));
 const Maps = lazy(() => import('./example-pages/Maps'));
 const ListGroups = lazy(() => import('./example-pages/ListGroups'));
 
+const Home = lazy(() => import('./pages/Home'));
+const Login = lazy(() => import('./pages/Login'));
+const Register = lazy(() => import('./pages/Register'));
+const RecoverPassword = lazy(() => import('./pages/RecoverPassword'));
+const Profile = lazy(() => import('./pages/Profile'));
+const PricingPlanVendor = lazy(() => import('./pages/PricingPlanVendor'));
+
 const Routes = () => {
   const location = useLocation();
 
@@ -207,8 +214,39 @@ const Routes = () => {
       <AnimatePresence>
         <Suspense fallback={<SuspenseLoading />}>
           <Switch>
-            <Redirect exact from="/" to="/LandingPage" />
-            
+            <Redirect exact from="/" to="/Home" />
+
+            <Route path={[
+              '/Home',
+              '/Login',
+              '/Register',
+              '/RecoverPassword',
+              '/PricingPlanVendor',
+              ]}>
+              <PresentationLayout>
+                <Switch location={location} key={location.pathname}>
+                  <motion.div
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={pageVariants}
+                    transition={pageTransition}>
+                    <Route path="/Home" component={Home} />
+                    <Route path="/Login" component={Login} />
+                    <Route path="/Register" component={Register} />
+                    <Route
+                      path="/RecoverPassword"
+                      component={PagesRecoverPassword}
+                    />
+                    <Route
+                      path="/PricingPlanVendor"
+                      component={PricingPlanVendor}
+                    />
+                  </motion.div>
+                </Switch>
+              </PresentationLayout>
+            </Route>
+
             <Route path={['/LandingPage']}>
               <PresentationLayout>
                 <Switch location={location} key={location.pathname}>
