@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const commonPaths = require('./paths');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   mode: 'development',
@@ -92,5 +93,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: `${commonPaths.cssFolder}/[name].css`
     }),
+    new Dotenv(),
   ],
 };

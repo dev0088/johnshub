@@ -3,9 +3,9 @@ services:
   db:
     image: postgres
     restart: always
-    command: --default-authentication-plugin=mysql_native_password --mysqlx=0
     environment:
       POSTGRES_DB: johnshub
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
       - "5432:5432"
@@ -20,8 +20,18 @@ services:
     hostname: johnshub_backend
     tty: true
     working_dir: /api
+    environment:
+      - DATABASE_ENGINE=django.db.backends.postgresql_psycopg2
+      - DATABASE_NAME=johnshub
+      - DATABASE_USER_NAME=postgres
+      - DATABASE_PASSWORD=postgres
+      - DATABASE_HOST=db
+      - DATABASE_PORT=5432
     depends_on:
       - db
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
+
+volumes:
+  db_data:

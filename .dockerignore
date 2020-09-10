@@ -6,3 +6,5 @@ Dockerfile
 docker-compose.yml
 Dockerfile*
 docker-compose*
+frontend/node_modules
+db_data

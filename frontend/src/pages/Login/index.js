@@ -11,6 +11,8 @@ export default function PagesLogin(props) {
       email: userInfo.email,
       password: userInfo.password
     }
+    console.log('===== baseURL: ', process.env.REACT_APP_API_BASE_URL);
+    
     loginWithAPI(data)
     .then(res => {
       console.log('===== res: ', res, props);

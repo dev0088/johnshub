@@ -24,7 +24,7 @@ const FooterSection = () => {
           <Grid item xs={12} md={6}>
             <Container maxWidth="md">
               <div className="d-flex mb-2 justify-content-start">
-                <a href="/Home" class="logo">
+                <a href="/Home" className="logo">
                   <img alt="JOHNSHUB" src={projectLogo}/>
                 </a>
               </div>

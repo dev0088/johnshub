@@ -7,4 +7,4 @@ env
 db.sqlite3
 .idea/
 .DS_Store
-db/
+db_data/
