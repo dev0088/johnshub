@@ -51,7 +51,7 @@ Djang Backend + React.js Frontend
 		$ yarn run build
 	```
   
-	if you want to run this frontend as debug mode
+	Note: if you want to run this frontend as debug mode, you can do this:
 	```
 		$ yarn start
 	```
@@ -70,21 +70,14 @@ Djang Backend + React.js Frontend
 
 - http://127.0.0.1:8000/api-docs/
 
-- http://127.0.0.1:8000/dashboard/
+- http://127.0.0.1:8000/
 
 
 ### Deployment
-	1. Development mode
-		 Deploy this backend with docker-compose mode.
-		 ```
-		 $ ./deploy-dev.sh
-		 ```
-
-	2. Production mode
-		 Deploy this bakcend with individual docker mode.
-		 ```
-		 $ ./deploy-prod.sh
-		 ```
+	Deploy this backend with docker-compose mode.
+	```
+	$ ./deploy.sh
+	```
 
 ### Troubleshooting
 - Remove migration files

@@ -8,3 +8,4 @@ db.sqlite3
 .idea/
 .DS_Store
 db_data/
+frontend/yarn.lock
