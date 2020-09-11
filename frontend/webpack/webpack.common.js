@@ -96,7 +96,7 @@ module.exports = {
       }),
       // new webpack.DefinePlugin({ ...definitions }),
       new Dotenv({
-        path: commonPaths.root += '.env',
+        path: commonPaths.root + '/.env',
         safe: false,
         // allowEmptyValues: true, // allow empty variables (e.g. `FOO=`) (treat it as empty string, rather than missing)
         // systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.

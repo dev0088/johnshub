@@ -39,13 +39,15 @@ RUN pip install -r requirements.txt
 
 COPY . /usr/src/johnshub/
 RUN cd /usr/src/johnshub/
+RUN pwd
 
+# RUN mkdir -p /usr/src/johnshub/static
+RUN cd /usr/src/johnshub/frontend/ && yarn install && yarn run build
 
-RUN mkdir -p /usr/src/johnshub/static
-RUN cd /usr/src/johnshub/frontend/ && yarn install && yarn build
-# RUN ls -al /usr/src/johnshub/frontend/build/
+RUN ls -al /usr/src/johnshub/frontend/build/
 
-# RUN cd /usr/src/johnshub/
+RUN cd /usr/src/johnshub/
+RUN ls -al
 # # RUN mkdir /usr/src/johnshub/static
 # # RUN python manage.py migrate
 # RUN python manage.py collectstatic

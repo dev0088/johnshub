@@ -19,7 +19,7 @@ services:
     container_name: johnshub_backend
     hostname: johnshub_backend
     tty: true
-    working_dir: /api
+    #working_dir: /api
     environment:
       - DATABASE_ENGINE=django.db.backends.postgresql_psycopg2
       - DATABASE_NAME=johnshub
@@ -29,7 +29,7 @@ services:
       - DATABASE_PORT=5432
     depends_on:
       - db
-    command: python manage.py runserver 0.0.0.0:8000
+    command: bash -c "python manage.py runserver 0.0.0.0:8000"
     ports:
       - "8000:8000"
 
