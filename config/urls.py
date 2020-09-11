@@ -47,10 +47,6 @@ urlpatterns = [
     url(r'^apis(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     url(r'^apis/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     url(r'^api-docs/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
-    # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    # Authentication urls
-    # url(r'^api/v1/auth-token/', include('authentication.urls')),
-    # url(r'^api/v1/login/', include('rest_social_auth.urls_jwt')),
     url(r'^api/v1/auth/email/', include('rest_auth.urls')),
     url(r'^api/v1/auth/email/registration/', include('rest_auth.registration.urls')),
     url(r'^api/v1/auth/social/', include('authentication.social_urls')),

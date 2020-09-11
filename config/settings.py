@@ -34,8 +34,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '*',
-    '210.193.122.21',
-    'appdevelop.comicul.jp',
     'localhost',
 ]
 
@@ -232,15 +230,7 @@ LOGGING = {
 }
 
 # Provider specific settings
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-        'APP': {
-            'client_id': '623319314798-u043438t24n8gb7hv2qrbjk8iovks32k.apps.googleusercontent.com',
-            'secret': 'w2ECbpuqE0xxCdJCE38izrYt',
-            'key': 'AIzaSyCz6vmxDdedhpLrhbYSY6hAQC59lFUsLig'
-        }
-    }
-}
+SOCIALACCOUNT_PROVIDERS = {}
 
 JWT_AUTH = {
     'JWT_ENCODE_HANDLER':
