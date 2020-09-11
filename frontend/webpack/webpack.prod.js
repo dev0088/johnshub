@@ -11,6 +11,11 @@ module.exports = {
     path: commonPaths.outputPath,
     publicPath: commonPaths.publicPath
   },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 204800,
+    maxAssetSize: 204800
+  },
   optimization: {
     splitChunks: {
       cacheGroups: {

@@ -9,21 +9,11 @@ const commonPaths = require('./paths');
 const Dotenv = require('dotenv-webpack');
 
 // const { definitions } = new Dotenv();
-
+console.log('===== `${commonPaths.root}/.env`: ', `${commonPaths.root}/.env`)
 module.exports = {
     entry: commonPaths.entryPath,
     module: {
       rules: [
-        // {
-        //   enforce: 'pre',
-        //   test: /\.(js|jsx)$/,
-        //   loader: 'eslint-loader',
-        //   exclude: /(node_modules)/,
-        //   options: {
-        //     formatter: eslint.CLIEngine.getFormatter('stylish'),
-        //     emitWarning: process.env.NODE_ENV !== 'production',
-        //   },
-        // },
         {
           test: /\.(js|jsx)$/,
           loader: 'babel-loader',
@@ -44,32 +34,6 @@ module.exports = {
           ],
         },
       ],
-      // loaders: [
-      //   {
-      //       test: /\.js$/,
-      //       loaders: ["babel"],
-      //       include: path.join(__dirname, "src")
-      //   },
-      //   {
-      //       // expose immutable globally so we can use it in app.html
-      //       test: require.resolve("immutable"),
-      //       loader: "expose?immutable"
-      //   },
-      //   {
-      //       test: /\.less$/,
-      //       loader: MiniCssExtractPlugin.extract("css?sourceMap!less?sourceMap")
-      //   },
-      //   {
-      //       // move font files found within CSS to the build directory
-      //       test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      //       loader: "file?name=[path][name].[ext]?[hash]&context=./node_modules"
-      //   },
-      //   {
-      //       // move images found within CSS to the build directory
-      //       test: /\.(jpg|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      //       loader: "file?name=[path][name].[ext]?[hash]&context=./node_modules"
-      //   }
-      // ]
     },
     serve: {
       add: app => {
@@ -96,7 +60,7 @@ module.exports = {
       }),
       // new webpack.DefinePlugin({ ...definitions }),
       new Dotenv({
-        path: commonPaths.root + '/.env',
+        path: `${commonPaths.root}/.env`,
         safe: false,
         // allowEmptyValues: true, // allow empty variables (e.g. `FOO=`) (treat it as empty string, rather than missing)
         // systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
