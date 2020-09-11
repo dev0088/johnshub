@@ -1,9 +1,24 @@
-FROM python:3.8.5-alpine
+FROM python:3.8.5
 
-ADD . /api
-WORKDIR /api
+# Install node 12.8.1
+RUN \
+  apt-get update && \
+  apt-get install -yqq apt-transport-https
+RUN \
+  echo "deb https://deb.nodesource.com/node_12.x stretch main" > /etc/apt/sources.list.d/nodesource.list && \
+  wget -qO- https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - && \
+  echo "deb https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list && \
+  wget -qO- https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+  apt-get update && \
+  apt-get install -yqq nodejs=$(apt-cache show nodejs|grep Version|grep nodesource|cut -c 10-) yarn && \
+  apt-mark hold nodejs && \
+  pip install -U pip && pip install pipenv psycopg2 cython mysqlclient && \
+  npm i -g npm@^6 && \
+  rm -rf /var/lib/apt/lists/*
+  
+# Setup Ubuntu linux
+RUN export LANGUAGE="en_US.UTF-8"
 
-ENV PYTHONUNBUFFERED 1
 ENV DATABASE_ENGINE django.db.backends.postgresql_psycopg2
 ENV DATABASE_NAME johnshub
 ENV DATABASE_USER_NAME postgres
@@ -13,41 +28,30 @@ ENV DATABASE_PORT 5432
 ENV PORT 8000
 ENV REACT_APP_API_BASE_URL https://www.johnshub.com/api/v1
 
-RUN apk update
-RUN apk add --no-cache --virtual .build-deps
-RUN apk add --no-cache gcc \
-    libc-dev \
-    make \
-    python3-dev \
-    musl-dev \
-    postgresql-dev \
-    mysql-dev \
-    libffi-dev \
-    py-pip \
-    openssl-dev \
-    build-base \
-    bash
-RUN echo "deb https://deb.nodesource.com/node_12.x buster main" > /etc/apt/sources.list.d/nodesource.list && \
-  wget -qO- https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - && \
-  echo "deb https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list && \
-  wget -qO- https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-RUN apk update
-RUN apk add --update nodejs nodejs yarn nodejs-npm
-RUN cd /api/frontend && yarn install && yarn run build
+RUN mkdir -p /usr/src/johnshub
 
-RUN pip install --upgrade pip
-RUN pip install psycopg2 cython mysqlclient
-RUN apk del .build-deps
+WORKDIR /usr/src/johnshub
+# RUN mkdir -p /usr/src/johnshub/run
+
+COPY requirements.txt /usr/src/johnshub/
 
 RUN pip install -r requirements.txt
 
-EXPOSE 8000
+COPY . /usr/src/johnshub/
+RUN cd /usr/src/johnshub/
 
-# FROM node:12-alpine
-# WORKDIR /api/frontend
-# ENV REACT_APP_API_BASE_URL https://www.johnshub.com/api/v1
-# # COPY ./frontend /api/frontend
-# ADD ./frontend /api/frontend
-# RUN cd /api/frontend
-# RUN npm install --silent
-# RUN npm run build
+
+RUN mkdir -p /usr/src/johnshub/static
+RUN cd /usr/src/johnshub/frontend/ && yarn install && yarn build
+# RUN ls -al /usr/src/johnshub/frontend/build/
+
+# RUN cd /usr/src/johnshub/
+# # RUN mkdir /usr/src/johnshub/static
+# # RUN python manage.py migrate
+# RUN python manage.py collectstatic
+
+# RUN ls -al /usr/src/johnshub/static/
+
+# RUN cp -rf /usr/src/johnshub/frontend/build/* /usr/src/johnshub/static/
+
+EXPOSE 8000

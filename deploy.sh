@@ -4,6 +4,7 @@ docker-compose stop
 docker-compose down
 
 # sudo chown centos:centos -Rf db_data
+sudo chmod 777 -Rf db_data
 
 docker-compose up -d --build
 
