@@ -26,6 +26,13 @@ RUN apk add --no-cache gcc \
     openssl-dev \
     build-base \
     bash
+# RUN echo "deb https://deb.nodesource.com/node_12.x buster main" > /etc/apt/sources.list.d/nodesource.list && \
+#   wget -qO- https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - && \
+#   echo "deb https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list && \
+#   wget -qO- https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+# RUN apk update
+# RUN apk add --update nodejs nodejs yarn nodejs-npm
+
 RUN pip install --upgrade pip
 RUN pip install psycopg2 cython mysqlclient
 RUN apk del .build-deps
@@ -33,3 +40,12 @@ RUN apk del .build-deps
 RUN pip install -r requirements.txt
 
 EXPOSE 8000
+
+FROM node:12-alpine
+WORKDIR /api/frontend
+ENV REACT_APP_API_BASE_URL https://www.johnshub.com/api/v1
+# COPY ./frontend /api/frontend
+ADD ./frontend /api/frontend
+RUN cd /api/frontend
+RUN npm install --silent
+RUN npm run build

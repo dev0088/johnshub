@@ -3,7 +3,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const commonPaths = require('./paths');
-const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   mode: 'production',
@@ -68,7 +67,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: `${commonPaths.cssFolder}/[name].css`
     }),
-    new Dotenv(),
   ],
   devtool: 'source-map',
 };

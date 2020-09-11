@@ -41,6 +41,8 @@ const LandingPage = () => {
 
     setState({ ...state, [side]: open });
   };
+  console.log('====== base URL: ', process.env);
+
   return (
     <Fragment>
       <div className="hero-wrapper bg-composed-wrapper bg-white">

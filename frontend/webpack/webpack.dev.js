@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const commonPaths = require('./paths');
-const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   mode: 'development',
@@ -69,7 +68,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(gif|png|jpg|jpeg|webp|mp4)$/i,
+        test: /\.(gif|png|jpg|jpeg|webp)$/i,
         use: [
           {
             loader: "url-loader",
@@ -79,7 +78,19 @@ module.exports = {
             }
           }
         ]
-      }
+      },
+      {
+        test: /\.mp4$/,
+        use: [
+          {
+            loader: require.resolve('file-loader'),
+            options: {
+              //name: 'static/media/[name].[hash:8].[ext]'
+              name: 'media/[name].[hash:8].[ext]'
+            }
+          }
+        ]
+      },
     ],
   },
   devServer: {
@@ -93,6 +104,5 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: `${commonPaths.cssFolder}/[name].css`
     }),
-    new Dotenv(),
   ],
 };
