@@ -16,10 +16,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: johnshub_backend
     hostname: johnshub_backend
-    tty: true
-    #working_dir: /api
     environment:
       - DATABASE_ENGINE=django.db.backends.postgresql_psycopg2
       - DATABASE_NAME=johnshub
@@ -32,6 +29,8 @@ services:
     command: bash -c "python manage.py runserver 0.0.0.0:8000"
     ports:
       - "8000:8000"
+    volumes:
+      - '.:/usr/src/johnshub'
 
 volumes:
   db_data:
