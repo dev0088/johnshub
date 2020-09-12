@@ -41,7 +41,7 @@ const LandingPage = () => {
 
     setState({ ...state, [side]: open });
   };
-  console.log('====== base URL: ', process.env);
+  console.log('====== base URL: ', process);
 
   return (
     <Fragment>

@@ -1,22 +1,4 @@
-FROM python:3.8.5
-
-RUN \
-  apt-get update && \
-  apt-get install -yqq apt-transport-https
-RUN \
-  echo "deb https://deb.nodesource.com/node_12.x stretch main" > /etc/apt/sources.list.d/nodesource.list && \
-  wget -qO- https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - && \
-  echo "deb https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list && \
-  wget -qO- https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
-  apt-get update && \
-  apt-get install -yqq nodejs=$(apt-cache show nodejs|grep Version|grep nodesource|cut -c 10-) yarn && \
-  apt-mark hold nodejs && \
-  pip install -U pip && pip install pipenv psycopg2 cython mysqlclient && \
-  npm i -g npm@^6 && \
-  rm -rf /var/lib/apt/lists/*
-  
-# Setup Ubuntu linux
-RUN export LANGUAGE="en_US.UTF-8"
+FROM nikolaik/python-nodejs:python3.8-nodejs12-alpine
 
 ENV DATABASE_ENGINE django.db.backends.postgresql_psycopg2
 ENV DATABASE_NAME johnshub
@@ -27,6 +9,27 @@ ENV DATABASE_PORT 5432
 ENV PORT 8000
 ENV REACT_APP_API_BASE_URL https://www.johnshub.com/api/v1
 
+# ADD ./ /api/frontend
+COPY . /usr/src/johnshub/
+
+RUN apk update
+RUN apk add --no-cache --virtual .build-deps
+RUN apk add --no-cache gcc \
+    libc-dev \
+    make \
+    python3-dev \
+    musl-dev \
+    postgresql-dev \
+    mysql-dev \
+    libffi-dev \
+    py-pip \
+    openssl-dev \
+    build-base \
+    bash
+
+RUN pip install -U pip 
+RUN pip install pipenv psycopg2 cython mysqlclient
+
 RUN mkdir -p /usr/src/johnshub
 
 WORKDIR /usr/src/johnshub
@@ -35,9 +38,6 @@ WORKDIR /usr/src/johnshub
 COPY requirements.txt /usr/src/johnshub/
 
 RUN pip install -r requirements.txt
-
-COPY . /usr/src/johnshub/
-RUN cd /usr/src/johnshub/
 
 RUN cd /usr/src/johnshub/frontend/ && yarn install && yarn run build
 
