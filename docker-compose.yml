@@ -1,7 +1,8 @@
 version: '3.5'
 services:
   db:
-    image: postgres
+    image: postgres:11
+    container_name: johnshub_db
     restart: always
     environment:
       POSTGRES_DB: johnshub
@@ -11,12 +12,16 @@ services:
       - "5432:5432"
     volumes:
       - db_data:/var/lib/postgres
+    networks:
+      services-network:
+        aliases:
+          - db
 
   api:
     build:
       context: .
       dockerfile: Dockerfile
-    hostname: johnshub_backend
+    container_name: johnshub_api
     environment:
       - DATABASE_ENGINE=django.db.backends.postgresql_psycopg2
       - DATABASE_NAME=johnshub
@@ -26,11 +31,24 @@ services:
       - DATABASE_PORT=5432
     depends_on:
       - db
+    links:
+      - db:db
     command: bash -c "python manage.py runserver 0.0.0.0:8000"
     ports:
       - "8000:8000"
+    dns:
+      - 8.8.8.8
     volumes:
       - '.:/usr/src/johnshub'
+    networks:
+      services-network:
+        aliases:
+          - api
 
 volumes:
   db_data:
+
+networks:
+  services-network:
+    name: services-network
+    driver: bridge

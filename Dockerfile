@@ -39,6 +39,6 @@ COPY requirements.txt /usr/src/johnshub/
 
 RUN pip install -r requirements.txt
 
-RUN cd /usr/src/johnshub/frontend/ && yarn install && yarn run build
+# RUN cd /usr/src/johnshub/frontend/ && yarn install && yarn run build
 
 EXPOSE 8000
