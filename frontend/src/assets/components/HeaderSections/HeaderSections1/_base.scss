@@ -11,21 +11,6 @@
     display: flex;
   }
 
-  // Logo
-  .header-johnshub-logo {
-    width: 100%!important;
-  }
-
-  .header-johnshub-title {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: .2em;
-    color: #fff;
-    margin-left: 15px;
-    width: 385px;
-  }
-
   .header-nav-logo {
     flex: 1;
     display: flex;
@@ -355,4 +340,62 @@
   to {
     opacity: 0;
   }
+}
+
+/* Custom style for Figma */
+
+// Logo
+.header-johnshub-logo {
+  width: 100%!important;
+  height: 42px!important;
+  min-height: 42px!important;
+  background: $black-900;
+}
+
+.header-johnshub-title {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  width: 385px;
+  color: #FFFFFF;
+}
+
+.header-button {
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.login-button {
+  font-family: "Roboto"!important;
+  min-width: 99px!important;
+  font-size: 20px!important;
+  min-height: 42px!important;
+  line-height: 23px!important;
+  background: #29458D!important;
+  border: 1px solid #29458D!important;
+}
+
+.get-free-account-button {
+  font-family: "Roboto"!important;
+  min-width: 99px!important;
+  font-size: 20px!important;
+  min-height: 42px!important;
+  line-height: 23px!important;
+  border: 1px solid #5CB517!important;
+  color: #FFFFFF!important;
+  width: max-content!important;
+}
+
+.header-service-prvide-menu {
+  min-height: 42px!important; 
+  font-family: Roboto!important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px!important;
+  line-height: 23px!important;
+  color: #FFFFFF!important;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)!important;
 }

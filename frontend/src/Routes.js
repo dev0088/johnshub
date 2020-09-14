@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 import { ThemeProvider } from '@material-ui/styles';
 
-import { ClimbingBoxLoader } from 'react-spinners';
+import { ClipLoader } from 'react-spinners';
 
 import MuiTheme from './theme';
 
@@ -196,14 +196,7 @@ const Routes = () => {
       <Fragment>
         <div className="d-flex align-items-center flex-column vh-100 justify-content-center text-center py-3">
           <div className="d-flex align-items-center flex-column px-4">
-            <ClimbingBoxLoader color={'#5383ff'} loading={true} />
-          </div>
-          <div className="text-muted font-size-xl text-center pt-3">
-            Please wait while we load the live preview examples
-            <span className="font-size-lg d-block text-dark">
-              This live preview instance can be slower than a real production
-              build!
-            </span>
+            <ClipLoader color={'var(--primary)'} loading={true} />
           </div>
         </div>
       </Fragment>

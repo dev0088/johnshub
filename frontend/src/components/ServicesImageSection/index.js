@@ -44,6 +44,7 @@ const ServicesImageSection = () => {
               <div className="service-card">
                 <div className="card-outer service-card-image">
                   <img src={service.image} />
+                  <div className="service-card-image-overlay" />
                   <p className="card-title">{service.text}</p>
                 </div>
               </div>

@@ -34,7 +34,7 @@ const LivePreviewExample = () => {
 
   return (
     <Fragment>
-      <div className="header-nav-wrapper header-nav-wrapper-lg w-100 px-4 navbar-dark bg-midnight-bloom">
+      <div className="header-nav-wrapper header-nav-wrapper-lg w-100 px-4 navbar-dark bg-midnight-balck-900 bg-black-900">
         <Container className="d-flex" fixed>
           <div className="header-nav-logo align-items-center d-flex justify-content-start">
             <div className="nav-logo font-italic">
@@ -56,10 +56,10 @@ const LivePreviewExample = () => {
             <div className="d-flex justify-content-end text-white">
               <Button
                 color="inherit"
-                className="btn-inverse px-3 mx-1 py-2 text-capitalize"
+                className="btn-inverse px-3 mx-1 py-2 text-capitalize header-service-prvide-menu"
                 component={Link}
                 to="/PricingPlanVendor">
-                Are you service provider?
+                Are you a service provider?
               </Button>
             </div>
           </div>
@@ -68,7 +68,7 @@ const LivePreviewExample = () => {
               <Button
                 component={Link}
                 to="/Login"
-                className="px-3"
+                className="px-3 header-button login-button"
                 color="primary"
                 variant="contained">
                 Login
@@ -78,10 +78,10 @@ const LivePreviewExample = () => {
               <Button
                 component={Link}
                 to="/Register"
-                className="px-3 bg-happy-green"
+                className="px-3 bg-green header-button get-free-account-button"
                 // color="primary"
                 variant="contained">
-                Get Free Account
+                Get free account
               </Button>
             </span>
             <span className="d-block d-lg-none">
@@ -135,7 +135,7 @@ const LivePreviewExample = () => {
                     </div>
                     <div className="text-truncate max-w-70 overflow-hidden">
                       <div className="font-weight-bold text-primary d-block">
-                        Are you service provider?
+                        Are you a service provider?
                       </div>
                     </div>
                     <div className="ml-auto card-hover-indicator align-self-center">

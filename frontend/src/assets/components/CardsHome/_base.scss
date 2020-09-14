@@ -1,9 +1,56 @@
 .card-find-container {
-  background: hsla(0,0%,100%,.7)!important;
-  box-shadow: 0 4px 4px rgba(0,0,0,.25);
-  border-radius: 0;
-  text-align: center;
-  padding: 30px 30px 30px;
+  margin-bottom: 120px!important;
+}
+
+.card-find {
+  text-align: center!important;
+  min-height: 213px;
+  background: rgba(255, 255, 255, 0.7) !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)!important;
+}
+
+.card-find-title {
+  margin-top: 17px;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.card-find-sub-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.card-find-text {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  max-width: 472px;
+  height: 48px;
+}
+.card-find-text-adornment {
+  height: 28px!important;
+}
+.card-find-text-placeholder {
+  text-overflow: 'ellipsis !important';
+  color: $black-800;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.card-find-button {
+  width: 171px;
+  height: 49px;
+  background: #29458D;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)!important;
+  margin-top: 7px!important;
+  border-radius: 0px!important;
+}
+.card-find-button-text {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
 }
 
 .service-cards{
@@ -26,6 +73,12 @@
     &:last-child{
       padding:0!important;
     }
+  }
+  .service-card-image-overlay {
+    background: #29458d73;
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
   }
   .card-outer{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

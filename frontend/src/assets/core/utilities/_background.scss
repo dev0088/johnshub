@@ -200,3 +200,12 @@
 .bg-green {
   background: $green !important;
 }
+
+// Black variations backgrounds
+.bg-balck-900 {
+  background: $black-900 !important;
+}
+
+.bg-midnight-balck-900 {
+  background-image: linear-gradient(-20deg, $black-900 0%, $black-900 100%) !important;
+}
