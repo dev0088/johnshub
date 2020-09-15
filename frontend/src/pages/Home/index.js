@@ -29,7 +29,7 @@ import PricingPlansSection from '../../components/PricingPlansSection';
 import LicenseSection from '../../components/LicenseSection';
 import FooterSection from '../../components/FooterSection';
 
-const LandingPage = () => {
+const HomePage = (props) => {
   const [state, setState] = React.useState({
     right: false
   });
@@ -123,4 +123,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default HomePage;

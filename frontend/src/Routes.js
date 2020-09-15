@@ -211,7 +211,7 @@ const Routes = () => {
 
             <Route path={[
               '/',
-              '/Home',
+              '/Home', 
               '/Login',
               '/Register',
               '/RecoverPassword',
@@ -225,7 +225,7 @@ const Routes = () => {
                     exit="out"
                     variants={pageVariants}
                     transition={pageTransition}>
-                    <Route path="/" component={Home} />
+                    <Route exact path="/" component={Home} />
                     <Route path="/Home" component={Home} />
                     <Route path="/Login" component={Login} />
                     <Route path="/Register" component={Register} />
