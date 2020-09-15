@@ -35,7 +35,7 @@ export default function PagesRegister(props) {
 
   const onBack = () => {
     if (registerStep === 0) {
-      props.history.push('/Home');
+      props.history.push('/');
       return;
     } else if (registerStep === 1) {
       setRegisterStep(0);

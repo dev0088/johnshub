@@ -29,7 +29,7 @@ export default function LivePreviewExample() {
             variant="contained"
             className="text-white btn-go-back"
             component={RouterLink}
-            to="/Home">
+            to="/">
             <span className="btn-wrapper--icon">
               <FontAwesomeIcon icon={['fas', 'arrow-left']} />
             </span>

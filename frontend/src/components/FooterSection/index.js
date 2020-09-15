@@ -24,12 +24,12 @@ const FooterSection = () => {
             <Grid item xs={12} md={6}>
               <Container maxWidth="md">
                 <div className="d-flex mb-2 justify-content-start">
-                  <a href="/Home" className="logo">
+                  <a href="/" className="logo">
                     <img alt="JOHNSHUB" src={projectLogo}/>
                   </a>
                 </div>
                 <div className="d-flex mb-2 justify-content-start">
-                  <a href="/Home">
+                  <a href="/">
                     <h5 className="display-5 mb-4 text-white font-weight-normal font-italic header-johnshub-title">
                       Your first move
                     </h5>

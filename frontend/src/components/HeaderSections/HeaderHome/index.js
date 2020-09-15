@@ -39,7 +39,7 @@ const LivePreviewExample = () => {
           <div className="header-nav-logo align-items-center d-flex justify-content-start">
             <div className="nav-logo font-italic">
               <Link
-                to="/Home"
+                to="/"
                 title="JOHNSHUB">
                 <i className="bg-white header-johnshub-logo">
                   <img
