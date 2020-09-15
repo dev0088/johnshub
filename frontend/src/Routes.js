@@ -207,9 +207,10 @@ const Routes = () => {
       <AnimatePresence>
         <Suspense fallback={<SuspenseLoading />}>
           <Switch>
-            <Redirect exact from="/" to="/Home" />
+            {/* <Redirect exact from="/" to="/" /> */}
 
             <Route path={[
+              '/',
               '/Home',
               '/Login',
               '/Register',
@@ -224,6 +225,7 @@ const Routes = () => {
                     exit="out"
                     variants={pageVariants}
                     transition={pageTransition}>
+                    <Route path="/" component={Home} />
                     <Route path="/Home" component={Home} />
                     <Route path="/Login" component={Login} />
                     <Route path="/Register" component={Register} />
