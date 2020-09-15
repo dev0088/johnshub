@@ -47,16 +47,16 @@ const ProPricingPlansSection = () => {
 
   return (
     <Fragment>
-      <Container fixed className="pb-4 text-center">
+      <Container fixed className="pro-plan-container text-center ">
         <Grid container spacing={4}>
           <Grid item xs={12} md={2} />
           <Grid item xs={12} md={8} className="text-center">
-            <Card className="card-box card-box-border-bottom border-primary mb-4">
-              <h2 className="pricing-plan-title text-primary">
+            <Card className="card pro">
+              <h2 className="title text-primary">
                 Pro Pricing Plans
               </h2>
-              <CardContent className="pricing-plan-card-content p-3">
-                <h5 className="pricing-plan-sub-title">
+              <CardContent className="content p-3">
+                <h5 className="pro-plan-content-title">
                   Your location helps us to track and Provide you with the best possible solution in your vicinity
                 </h5>
 
@@ -70,9 +70,14 @@ const ProPricingPlansSection = () => {
                       label="Select service"
                       value={service}
                       // variant="outlined"
-                      onChange={handleChange}>
+                      onChange={handleChange}
+                      inputProps={{
+                        classes: {
+                          input: {fontsize: 28},
+                        },
+                      }}>
                       {serviceTypes.map(service => (
-                        <MenuItem key={service.category} value={service.category} className="text-left">
+                        <MenuItem key={service.category} value={service.category} className="text-left pro-plan-content-textß">
                           {`${service.category}  $${service.price}`}
                         </MenuItem>
                       ))}
@@ -80,10 +85,10 @@ const ProPricingPlansSection = () => {
                   </Grid>
                   <Grid item xs={12} className="text-center">
                     <Button
-                      // fullWidth
+                      fullWidth
                       color="primary"
                       variant="contained"
-                      className="pricing-one-btn pricing-button">
+                      className="button-continue">
                         <span className="btn-wrapper--label font-weight-bold pricing-button-label">Continue</span>
                     </Button>
                   </Grid>

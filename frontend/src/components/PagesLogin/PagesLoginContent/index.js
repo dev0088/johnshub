@@ -46,22 +46,10 @@ const PagesLoginContent = (props) => {
     <Fragment>
       <div className="app-wrapper min-vh-100">
         <div className="app-main flex-column">
-          {/* <Button
-            size="large"
-            variant="outlined"
-            color="primary"
-            component={RouterLink}
-            className="btn-go-back"
-            to="/home">
-            <span className="btn-wrapper--icon">
-              <FontAwesomeIcon icon={['fas', 'arrow-left']} />
-            </span>
-            <span className="btn-wrapper--label">Back to home</span>
-          </Button> */}
           <div className="app-content p-0">
             <div className="app-content--inner d-flex align-items-start">
               <div className="flex-grow-1 d-flex align-items-center">
-                <div className="bg-composed-wrapper--content py-5">
+                <div className="bg-composed-wrapper--content py-5 login-section">
                   <Container maxWidth="lg">
                     <Grid container spacing={0}>
                       <Grid
@@ -70,7 +58,7 @@ const PagesLoginContent = (props) => {
                         lg={12}
                         className="d-flex flex-column align-items-center">
                         <span className="w-100 text-left text-md-center pb-4">
-                          <h1 className="display-3 text-xl-left text-center mb-3 font-weight-bold pricing-container-title text-primary">
+                          <h1 className="display-3 text-center mb-3 font-weight-bold title text-primary">
                             Login to your account
                           </h1>
                           <p className="font-size-lg text-xl-left text-center mb-0 text-black-50">

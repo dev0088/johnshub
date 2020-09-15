@@ -28,7 +28,7 @@ const PagesRegisterContent = (props) => {
           <div className="app-content p-0">
             <div className="app-inner-content-layout--main">
               <div className="flex-grow-1 w-100 d-flex align-items-start">
-                <div className="bg-composed-wrapper--content">
+                <div className="bg-composed-wrapper--content register-section-1">
                   <Grid container spacing={0} className="min-vh-100">
                     {/* <Grid
                       item
@@ -57,7 +57,7 @@ const PagesRegisterContent = (props) => {
                     xs={12}
                     className="d-flex align-items-center">
                       <Container maxWidth="sm">
-                          <h3 className="display-4 mb-2 font-weight-bold pricing-container-title text-primary text-center">
+                          <h3 className="display-4 mb-2 font-weight-bold title text-primary text-center">
                             Create your account
                           </h3>
                           <p className="font-size-lg mb-5 text-black-50 text-center">

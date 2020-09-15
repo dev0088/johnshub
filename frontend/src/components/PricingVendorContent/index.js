@@ -8,7 +8,7 @@ import ProPricingPlansSection from '../ProPricingPlansSection';
 const PricingVendorContent = () => {
   return (
     <Fragment>
-      <div className="bg-secondary">
+      <div className="bg-white pricing-vender-section">
         <div className="py-4 pricing-page-heading">
           <Container fixed className="pb-4 text-center">
             <h2 className="title text-white">

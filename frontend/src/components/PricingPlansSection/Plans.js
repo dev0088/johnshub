@@ -9,9 +9,9 @@ import {
 
 const Plans = () => {
   return (
-    <Grid container spacing={4}>
-      <Grid item xs={12} md={6} className="text-center">
-        <Card className="card">
+    <Grid container spacing={0}>
+      <Grid item xs={12} md={12} className="text-center">
+        <Card className="card first-card">
           <h2 className="title text-primary">
             Free Account
           </h2>
@@ -32,8 +32,6 @@ const Plans = () => {
             </Button>
           </CardContent>
         </Card>
-      </Grid>
-      <Grid item xs={12} md={6} className="text-center">
         <Card className="card">
           <h2 className="title text-primary">
             Pro Account
