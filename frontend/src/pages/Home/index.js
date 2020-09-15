@@ -47,76 +47,78 @@ const LandingPage = () => {
 
   return (
     <Fragment>
-      <div className="hero-wrapper bg-composed-wrapper bg-white">
-        <HeaderHome />
-        <div className="flex-grow-1 w-100 d-flex align-items-center">
-          <div
-            className="bg-composed-wrapper--image bg-composed-filter-rm opacity-9"
-            style={{ backgroundImage: 'url(' + imageHomeBanner + ')' }}
-          />
-          <div className="hero-banner-container bg-composed-wrapper--content">
-            <Container fixed className="card-find-container">
-              <Grid container spacing={4} className="d-flex align-items-center">
-                <Grid item xs={12} md={12}>
-                  <Card className="card-box card-find text-center mb-4">
-                    <CardContent className="p-3">
-                      <h5 className="card-find-title font-weight-bold mb-3">
-                        Find all service providers under the sun in no time
-                      </h5>
-                      <p className="card-find-sub-title text-primary font-weight-bold">
-                        Don't Search. Submit.
-                      </p>
-                      <div id="embed_search">
-                        <Grid container spacing={4}>
-                          <Grid item lg={2} md={1} xs={12} />
-                          <Grid item lg={6} md={8} xs={12} className="text-right">
-                            <TextField
-                              fullWidth
-                              margin="dense"
-                              variant="outlined"
-                              id="search-condition"
-                              className="card-find-text"
-                              InputLabelProps={{
-                                className: "card-find-text-placeholder"
-                              }}
-                              inputProps={{
-                                className: "card-find-text-adornment"
-                              }}
-                              placeholder={"START A SUBMISSION"}
-                            />
+      <div className="bg-white">
+        <div className="hero-wrapper bg-composed-wrapper bg-white">
+          <HeaderHome />
+          <div className="flex-grow-1 w-100 d-flex align-items-center">
+            <div
+              className="bg-composed-wrapper--image bg-composed-filter-rm"
+              style={{ backgroundImage: 'url(' + imageHomeBanner + ')' }}
+            />
+            <div className="hero-banner-container bg-composed-wrapper--content">
+              <Container fixed className="card-find-container">
+                <Grid container spacing={4} className="d-flex align-items-center">
+                  <Grid item xs={12} md={12}>
+                    <Card className="card-box card-find text-center mb-4">
+                      <CardContent className="p-3">
+                        <h5 className="card-find-title font-weight-bold mb-3">
+                          Find all service providers under the sun in no time
+                        </h5>
+                        <p className="card-find-sub-title text-primary font-weight-bold">
+                          Don't Search. Submit.
+                        </p>
+                        <div id="embed_search">
+                          <Grid container spacing={4}>
+                            <Grid item lg={2} md={1} xs={12} />
+                            <Grid item lg={6} md={8} xs={12} className="text-right">
+                              <TextField
+                                fullWidth
+                                margin="dense"
+                                variant="outlined"
+                                id="search-condition"
+                                className="card-find-text"
+                                InputLabelProps={{
+                                  className: "card-find-text-placeholder"
+                                }}
+                                inputProps={{
+                                  className: "card-find-text-adornment"
+                                }}
+                                placeholder={"START A SUBMISSION"}
+                              />
+                            </Grid>
+                            <Grid item lg={2} md={2} xs={12}>
+                              <Button
+                                className="card-find-button"
+                                color="primary"
+                                variant="contained"
+                                id="mc-embedded-search-start"
+                                name="search"
+                                type="submit">
+                                <span className="btn-wrapper--label font-weight-bold card-find-button-text">Start</span>
+                              </Button>
+                            </Grid>
+                            <Grid item lg={2} md={1} xs={12} />
                           </Grid>
-                          <Grid item lg={2} md={2} xs={12}>
-                            <Button
-                              className="card-find-button"
-                              color="primary"
-                              variant="contained"
-                              id="mc-embedded-search-start"
-                              name="search"
-                              type="submit">
-                              <span className="btn-wrapper--label font-weight-bold card-find-button-text">Start</span>
-                            </Button>
-                          </Grid>
-                          <Grid item lg={2} md={1} xs={12} />
-                        </Grid>
-                      </div>
-                    </CardContent>
-                  </Card>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Grid>
                 </Grid>
-              </Grid>
-            </Container>
+              </Container>
+            </div>
           </div>
         </div>
+        <ServicesImageSection />
+        <ServicesSection />
+        <div className="bg-gray-1000-home">
+          <WhatIsJohnshub />
+          <VideosSection />
+        </div>
+        <LatestJobs />
+        <PricingPlansSection />
+        <LicenseSection />
+        <FooterSection />
       </div>
-      <ServicesImageSection />
-      <ServicesSection />
-      <div className="bg-gray-1000-home">
-        <WhatIsJohnshub />
-        <VideosSection />
-      </div>
-      <LatestJobs />
-      <PricingPlansSection />
-      <LicenseSection />
-      <FooterSection />
     </Fragment>
   );
 };

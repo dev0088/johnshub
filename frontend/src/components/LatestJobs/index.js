@@ -29,13 +29,15 @@ const jobs = [
 const LatestJobs = () => {
   return (
     <Fragment>
-      <Container fixed className="pb-4 bg-white text-center latestjobs-container">
-        <h2 className="title text-primary font-weight-bold">
-          Latest Jobs on Johnshub
-        </h2>
-        <Jobs jobs={jobs}/>
-        <p className="see-more"><a href="/PricingPlanVendor">See more</a></p>
-      </Container>
+      <div className="bg-white">
+        <Container fixed className="bg-white text-center latestjobs-container">
+          <h2 className="title text-primary font-weight-bold">
+            Latest Jobs on Johnshub
+          </h2>
+          <Jobs jobs={jobs}/>
+          <p className="see-more"><a href="/PricingPlanVendor">See more</a></p>
+        </Container>
+      </div>
     </Fragment>
   );
 };

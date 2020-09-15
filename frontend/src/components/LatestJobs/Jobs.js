@@ -10,7 +10,7 @@ import {
 
 const Jobs = (props) => {
   return (
-    <Grid container spacing={4}>
+    <Grid container spacing={0}>
       <Grid item xs={12} md={12} className="text-center">
         <Card className="card">
           {props.jobs.map((job, index) => {
