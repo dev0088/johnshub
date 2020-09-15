@@ -54,9 +54,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # Static URL
     url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT,}),
-    url(r'^dashboard/', dashboard, name='dashboard'),
     url('^auth/logout/$', logout_then_login, name='logout'),
     url('^login/', index, name='login'),
     # Default URL
-    url(r'^$', dashboard, name='dashboard')
+    url(r'^$', dashboard, name='dashboard'),
+    url(r'^(?:.*)/?$', dashboard),
 ]

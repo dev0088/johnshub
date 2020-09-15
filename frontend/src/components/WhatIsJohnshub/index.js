@@ -6,7 +6,7 @@ import {
 const WhatIsJohnshub = () => {
   return (
     <Fragment>
-      <div className="py-4 bg-secondary">
+      <div className="py-4 bg-gray-1000 ">
         <Container fixed className="pb-4">
           <div className="text-center py-4">
             <h3 className="display-3 mb-2 font-weight-bold text-primary">
