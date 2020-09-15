@@ -413,6 +413,9 @@
     filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
     border-radius: 0px;
     padding: 22px;
+    .split {
+      border-bottom: 2px solid #4D4D4D;
+    }
   }
   .job-container {
     padding-left: 78px;
@@ -476,8 +479,8 @@
 .footer-section {
   padding-top: 20px;
   padding-bottom: 20px;
-  // padding-left: 39.5px;
-  // padding-right: 36px;
+  padding-left: 39.5px;
+  padding-right: 36px;
   .appstore {
     margin-top: 23px;
     margin-bottom: 24px;

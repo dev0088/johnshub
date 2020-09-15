@@ -4,6 +4,7 @@ import {
   Button,
   Card,
   CardContent,
+  Divider,
   Grid,
 } from '@material-ui/core';
 
@@ -14,7 +15,7 @@ const Jobs = (props) => {
         <Card className="card">
           {props.jobs.map((job, index) => {
             return (
-              <CardContent className="job-container" key={`latest-jobs-${index}`}>
+              <CardContent className={`job-container ${(index < (props.jobs.length - 1)) && "split"}`} key={`latest-jobs-${index}`}>
                 <Grid container>
                   <Grid item xs={10} md={11} className="text-left">
                     <div className="job-title">

@@ -1,4 +1,8 @@
 //  Core
+.header-section {
+  padding-left: 105px!important;
+  padding-right: 56px!important;
+}
 
 .header-nav-wrapper {
   min-height: $header-height;
@@ -346,7 +350,7 @@
 
 // Logo
 .header-johnshub-logo {
-  width: 100%!important;
+  width: 226.31px!important;
   height: 42px!important;
   min-height: 42px!important;
   background: $black-900;
@@ -362,12 +366,10 @@
   width: 385px;
   color: #FFFFFF;
 }
-
 .header-button {
   box-sizing: border-box;
   border-radius: 5px;
 }
-
 .login-button {
   font-family: "Roboto"!important;
   min-width: 99px!important;
@@ -376,8 +378,8 @@
   line-height: 23px!important;
   background: #29458D!important;
   border: 1px solid #29458D!important;
+  margin-right: 20px!important;
 }
-
 .get-free-account-button {
   font-family: "Roboto"!important;
   min-width: 99px!important;
@@ -388,14 +390,22 @@
   color: #FFFFFF!important;
   width: max-content!important;
 }
-
+.header-divider {
+  border-left: 1px solid #FFFFFF;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .header-service-prvide-menu {
-  min-height: 42px!important; 
-  font-family: Roboto!important;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px!important;
-  line-height: 23px!important;
-  color: #FFFFFF!important;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)!important;
+  margin-top: auto;
+  margin-bottom: auto;
+  a {
+    min-height: 42px!important; 
+    font-family: Roboto!important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px!important;
+    line-height: 23px!important;
+    color: #FFFFFF!important;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)!important;
+  }
 }

@@ -34,8 +34,8 @@ const LivePreviewExample = () => {
 
   return (
     <Fragment>
-      <div className="header-nav-wrapper header-nav-wrapper-lg w-100 px-4 navbar-dark bg-midnight-balck-900 bg-black-900">
-        <Container className="d-flex" fixed>
+      <div className="header-section header-nav-wrapper header-nav-wrapper-lg w-100 px-4 navbar-dark bg-midnight-balck-900 bg-black-900">
+        {/* <div className="header-section" fixed> */}
           <div className="header-nav-logo align-items-center d-flex justify-content-start">
             <div className="nav-logo font-italic">
               <Link
@@ -52,23 +52,16 @@ const LivePreviewExample = () => {
               </Link>
             </div>
           </div>
-          <div className="header-nav-menu d-none d-lg-block">
-            <div className="d-flex justify-content-end text-white">
-              <Button
-                color="inherit"
-                className="btn-inverse px-3 mx-1 py-2 text-capitalize header-service-prvide-menu"
-                component={Link}
-                to="/PricingPlanVendor">
-                Are you a service provider?
-              </Button>
-            </div>
-          </div>
           <div className="header-nav-actions flex-grow-0 flex-lg-grow-1">
+            <span className="d-none d-lg-block header-service-prvide-menu">
+              <a href="/PricingPlanVendor" className="btn-inverse">Are you a service provider?</a>
+            </span>
+            <span className="d-none d-lg-block header-divider" />
             <span className="d-none d-lg-block">
               <Button
                 component={Link}
                 to="/Login"
-                className="px-3 header-button login-button"
+                className="header-button login-button"
                 color="primary"
                 variant="contained">
                 Login
@@ -200,7 +193,7 @@ const LivePreviewExample = () => {
               <Divider />
             </List>
           </Drawer>
-        </Container>
+        {/* </Container> */}
       </div>
     </Fragment>
   );
