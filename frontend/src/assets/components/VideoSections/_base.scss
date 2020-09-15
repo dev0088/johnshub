@@ -1,16 +1,58 @@
-.player-wrapper {
-  position: relative;
-  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
-  margin-bottom: 30px;
-}
- 
-.react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+.video-section{
+	.video-one-outer{
+		@media(max-width: 599px){
+			margin-bottom: 30px;
+		}
+	}
+	.text-left {
+    min-height: 107px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .botton-signup {
+    width: 170px;
+    height: 63px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  .button-text {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .player-button-container {
+    background: rgba(41, 69, 141, 0.87);
+    width: 121px;
+    height: 121px;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  .player-button-internal {
+    width: 106.15px;
+    height: 106.15px;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .player-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+    margin-bottom: 51px;
+    // max-width: 570px;
+    // max-height: 386px;
+  }
+  
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .react-player > div {
+    border-radius: 4%;
+  }
 
-.player-button {
-  color: #ffffffc7;
-  font-size: 8.5rem!important;
+
+  .player-button {
+    color: #ffffffc7;
+    font-size: 8.5rem!important;
+  }
 }

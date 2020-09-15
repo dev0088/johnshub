@@ -18,8 +18,8 @@ import playStoreImage from '../../assets/images/home/play-store.png';
 const FooterSection = () => {
   return (
     <Fragment>
-      <div className="bg-first py-5">
-      <Container>
+      <div className="bg-footer footer-section">
+        <Container>
         <Grid container spacing={0}>
           <Grid item xs={12} md={6}>
             <Container maxWidth="md">
@@ -97,9 +97,9 @@ const FooterSection = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Container maxWidth="md">
-              <div className="d-flex mb-4 justify-content-end">
-                <a href="#"><img src={appleStoreImage} /></a>
-                <a href="#"><img src={playStoreImage} /></a>
+              <div className="d-flex appstore justify-content-end">
+                <a href="#"><img className="image" src={appleStoreImage} /></a>
+                <a href="#"><img className="image" src={playStoreImage} /></a>
               </div>
               <div className="list-outer">
                 <div className="list-item">
@@ -123,7 +123,10 @@ const FooterSection = () => {
                   <a href="#">Privacy</a>
                 </div>
                 <div className="list-item">
-                  <a href="#"> &copy;2020 Johnshub</a>
+                  <a href="#">Market Data Disclaimer</a>
+                </div>
+                <div className="list-item">
+                  <a href="#">&copy;2020 Johnshub</a>
                 </div>
               </div>
             </Container>

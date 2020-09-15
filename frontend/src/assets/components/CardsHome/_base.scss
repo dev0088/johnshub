@@ -112,6 +112,11 @@
   }
 }
 
+.bg-gray-1000-home {
+  background: $gray-1000 !important;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+}
+
 .home-service-icons{
 	.service-icons-outer{
 		justify-content: space-between;
@@ -150,27 +155,114 @@
 	}
 }
 
-.video-section{
-	.video-one-outer{
-		@media(max-width: 599px){
-			margin-bottom: 30px;
-		}
-	}
-	.text-left {
-    min-height: 90px;
-    padding-right: 1rem;
-    padding-left: 1rem;
-	}
+.pricing-plan {
+  padding-top: 36px;
+  padding-bottom: 64px;
+  .container-title {
+    margin-bottom: 34px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .pricing-plan-description {
+    margin-top: 51px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 23px;
+    color: $black;
+  }
+  .card {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 49px;
+    padding-bottom: 34px;
+    background: $white;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+  }
+  .title {
+    margin-top: 0px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .content {
+    margin-top: 9px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px!important;
+    text-align: center;
+    .content-title {
+      font-size: 20px;
+      line-height: 23px;
+      color: $black-900;
+    }
+    .content-text {
+      margin-top: 100px;
+      margin-bottom: 110px;
+      max-width: 278px;
+      min-height: 164px;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      color: #707070;
+      margin-left: auto;
+      margin-right: auto;
+      span{
+        color: #29458D;
+      }
+      .know-more{
+        display: block;
+        margin: 20px 0 0;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        color: #9B9B9B;
+        span{
+          width: 30px;
+          height: 30px;
+          background: #FFFFFF;
+          box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+          display: block;
+          margin: 0 auto 10px;
+          border-radius: 100%;
+          line-height: 30px;
+          font-size: 20px;
+          color: #9B9B9B;
+        }
+      }
+    }
+    .button-free-account {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      height: 55px;
+      min-width: 210px;
+      background: $primary;
+      border-radius: 0px;
+      span {
+        color: $white;
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+    .button-pro {
+      height: 55px;
+      min-width: 210px;
+      background: $primary;
+      border-radius: 0px;
+      background: $white;
+      span {
+        color: $primary;
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+  }
 }
-
 .pricing-plan-card-content{
   // box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);		
   padding: 30px 0;
   height: 100%;
 }
-.pricing-container-title{
-  margin-bottom: 30px;
-}
+
 .pricing-plan-title{
   margin-top: 30px;
 }
@@ -226,7 +318,7 @@
 }
 
 .pricing-page-heading{
-  background: #4D4D4D;
+  background: $black-900;
   margin-bottom: 40px;
   .title{
     font-size: 36px!important;
@@ -276,7 +368,7 @@
     text-align: left;	
   }
   &:nth-child(2){
-    margin-bottom:10px;
+    margin-bottom:24px;
   }
   .list-item{
     display: inline-block;
@@ -290,6 +382,108 @@
       font-size: 14px;
       line-height: 16px;
       color: #FFFFFF;
+    }
+  }
+}
+
+.section-title-container {
+  padding-top: 35px!important;
+}
+
+.section-title {
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.section-description {
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+}
+
+.latestjobs-container {
+  margin-top: 1.5rem;
+  .title {
+    margin-top: 77px;
+    margin-bottom: 42px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .card {
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+    border-radius: 0px;
+    padding: 22px;
+  }
+  .job-container {
+    padding-left: 78px;
+    padding-right: 78px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    .job-title {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      color: $primary;
+    }
+    .job-level-title {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 33px;
+      color: $primary;
+      text-align: center;
+    }
+    .job-description {
+      font-size: 20px;
+      line-height: 23px;
+      color: $black-900;
+      max-width: 715.47px;
+      min-height: 71px;
+      padding-right: 10px;
+    }
+    .job-level {
+      font-weight: bold;
+      font-size: 28px;
+      color: $black-900;
+      text-align: center;
+    }
+  }
+  .see-more{
+    margin-top: 39px;
+    margin-bottom: 59px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: underline;
+  }
+}
+
+.license-container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 46px;
+  padding-bottom: 75px;
+  
+  .text {
+    background: rgba(235, 235, 235, 0.75);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+  }
+}
+
+.footer-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // padding-left: 39.5px;
+  // padding-right: 36px;
+  .appstore {
+    margin-top: 23px;
+    margin-bottom: 24px;
+    .image {
+      width: 140px;
+      height: 42px;
     }
   }
 }

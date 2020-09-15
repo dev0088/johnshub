@@ -24,7 +24,9 @@ import ServicesImageSection from '../../components/ServicesImageSection';
 import ServicesSection from '../../components/ServicesSection';
 import WhatIsJohnshub from '../../components/WhatIsJohnshub';
 import VideosSection from '../../components/VideosSection';
+import LatestJobs from '../../components/LatestJobs';
 import PricingPlansSection from '../../components/PricingPlansSection';
+import LicenseSection from '../../components/LicenseSection';
 import FooterSection from '../../components/FooterSection';
 
 const LandingPage = () => {
@@ -107,9 +109,13 @@ const LandingPage = () => {
       </div>
       <ServicesImageSection />
       <ServicesSection />
-      <WhatIsJohnshub />
-      <VideosSection />
+      <div className="bg-gray-1000-home">
+        <WhatIsJohnshub />
+        <VideosSection />
+      </div>
+      <LatestJobs />
       <PricingPlansSection />
+      <LicenseSection />
       <FooterSection />
     </Fragment>
   );

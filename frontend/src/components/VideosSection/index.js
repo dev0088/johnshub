@@ -6,6 +6,9 @@ import {
 } from '@material-ui/core';
 import ReactPlayer from 'react-player';
 import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
+import PlayCircleFilledWhiteIcon from '@material-ui/icons/PlayCircleFilledWhite';
+import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import videoImage1 from '../../assets/images/home/home-video1.png';
 import videoImage2 from '../../assets/images/home/home-video2.png';
 
@@ -50,7 +53,7 @@ const VideosSection = () => {
   
   return (
     <Fragment>
-      <div className="py-4 bg-secondary video-section">
+      <div className="py-4 bg-gray-1000 video-section">
         <Container fixed className="pb-4">
           <Grid container spacing={4}>
             {videos.map((video, index) => {
@@ -58,9 +61,6 @@ const VideosSection = () => {
                 <Grid item xs={12} md={6} key={`video-${index}`} className="text-center">
                   <h3 className="sub-title text-primary">{video.title}</h3>
                   <p className="text-left font-size-lg">{video.description}</p>
-                  {/* <p>
-                    <img className="mt-3 mb-5" src={video.image} />
-                  </p> */}
                   <div className='player-wrapper'>
                     <ReactPlayer
                       playing
@@ -69,7 +69,7 @@ const VideosSection = () => {
                       width='100%'
                       height='100%'
                       controls
-                      playIcon={<PlayCircleOutlineIcon className="player-button" onClick={() => onClickPlay(index)}/>}
+                      playIcon={<div className="player-button-container"><PlayArrowIcon className="player-button-internal" onClick={() => onClickPlay(index)}/></div>}
                       light={video.image}
                       onPause={() => onClickPause(index)}
                       onEnded={() => onEnded(index)}
@@ -79,14 +79,14 @@ const VideosSection = () => {
                     color="primary"
                     variant="contained"
                     id={`signup-${index}`}
+                    className="botton-signup"
                     name="signup"
                     type="submit">
-                    <span className="btn-wrapper--label font-weight-bold">Sign up</span>
+                    <span className="button-text btn-wrapper--label font-weight-bold">Sign up</span>
                   </Button>
                 </Grid>
               );
-              })
-            }
+            })}
           </Grid>
         </Container>
       </div>
