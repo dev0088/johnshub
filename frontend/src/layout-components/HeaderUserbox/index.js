@@ -125,7 +125,7 @@ export default function HeaderUserbox() {
             <ListItem button>Profile settings</ListItem>
             <ListItem button>
               <Link
-                to="/Home"
+                to="/"
                 className="d-flex ">
                   Log out
               </Link>
