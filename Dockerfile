@@ -36,6 +36,7 @@ WORKDIR /usr/src/johnshub
 # RUN mkdir -p /usr/src/johnshub/run
 
 COPY requirements.txt /usr/src/johnshub/
+COPY frontend/.env.example /usr/src/johnshub/frontend/.env
 
 RUN pip install -r requirements.txt
 

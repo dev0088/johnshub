@@ -97,7 +97,7 @@ const FooterSection = () => {
             </Grid>
             <Grid item xs={12} md={6}>
               <Container maxWidth="md">
-                <div className="d-flex appstore justify-content-end">
+                <div className="d-flex appstore">
                   <a href="#"><img className="image" src={appleStoreImage} /></a>
                   <a href="#"><img className="image" src={playStoreImage} /></a>
                 </div>

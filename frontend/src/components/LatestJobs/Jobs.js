@@ -17,22 +17,22 @@ const Jobs = (props) => {
             return (
               <CardContent className={`job-container ${(index < (props.jobs.length - 1)) && "split"}`} key={`latest-jobs-${index}`}>
                 <Grid container>
-                  <Grid item xs={10} md={11} className="text-left">
+                  <Grid item xs={9} md={11} className="text-left">
                     <div className="job-title">
                       {job.title}
                     </div>
                   </Grid>
-                  <Grid item xs={2} md={1} className="text-left">
+                  <Grid item xs={3} md={1} className="text-left">
                     <div className="job-level-title">
                       Title
                     </div>
                   </Grid>
-                  <Grid item xs={10} md={11} className="text-left">
+                  <Grid item xs={9} md={11} className="text-left">
                     <div className="job-description">
                       {job.description}
                     </div>
                   </Grid>
-                  <Grid item xs={2} md={1} className="text-left">
+                  <Grid item xs={3} md={1} className="text-left">
                     <div className="job-level">
                       {job.level}
                     </div>

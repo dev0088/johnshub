@@ -181,9 +181,16 @@
     min-width: 467px;
     max-width: 467px;
     display: inline-block;
+    @media(max-width: 599px){
+      min-width: 397px;
+      max-width: 397px;
+    }
   }
   .first-card {
     margin-right: 30px;
+    @media(max-width: 599px){
+      margin-right: 0px;
+    }
   }
   .title {
     margin-top: 0px;
@@ -212,6 +219,10 @@
       color: #707070;
       margin-left: auto;
       margin-right: auto;
+      @media(max-width: 599px){
+        margin-top: 50px;
+        margin-bottom: 55px;
+      }
       span{
         color: #29458D;
       }
@@ -403,6 +414,12 @@
     padding-right: 78px;
     padding-top: 45px;
     padding-bottom: 45px;
+    @media(max-width: 599px){
+      padding-left: 28px;
+      padding-right: 28px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
     .job-title {
       font-weight: 500;
       font-size: 22px;
@@ -462,9 +479,17 @@
   padding-bottom: 20px;
   padding-left: 39.5px;
   padding-right: 36px;
+  @media(max-width: 599px){
+    padding-left: 10px!important;
+    padding-right: 16px!important;
+  }
   .appstore {
     margin-top: 23px;
     margin-bottom: 24px;
+    justify-content: flex-end !important;
+    @media(max-width: 599px){
+      justify-content: flex-start !important;
+    }
     .image {
       width: 140px;
       height: 42px;
