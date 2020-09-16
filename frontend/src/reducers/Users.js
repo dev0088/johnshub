@@ -9,9 +9,9 @@ const initialState = {
   value: []
 };
 
-const actionType = types.GET_RENTAL_AVERAGE_DURATION;
+const actionType = types.GET_USERS;
 
-export default function averageDurationReducer(state = initialState, action) {
+export default function usersReducer(state = initialState, action) {
   switch(action.type) {
     case actionType.INIT:
       return Object.assign({}, state, {

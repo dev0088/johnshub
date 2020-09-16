@@ -17,7 +17,7 @@ import {
 import projectLogo from '../../../assets/images/logo.png';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
-const LivePreviewExample = () => {
+const HeaderHome = () => {
   const [state, setState] = React.useState({
     right: false
   });
@@ -197,4 +197,4 @@ const LivePreviewExample = () => {
   );
 };
 
-export default LivePreviewExample;
+export default HeaderHome;

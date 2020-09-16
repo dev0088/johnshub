@@ -166,6 +166,7 @@ const Register = lazy(() => import('./pages/Register'));
 const RecoverPassword = lazy(() => import('./pages/RecoverPassword'));
 const Profile = lazy(() => import('./pages/Profile'));
 const PricingPlanVendor = lazy(() => import('./pages/PricingPlanVendor'));
+const Dashboard = lazy(() => import('./pages/Dashboard'));
 
 const Routes = () => {
   const location = useLocation();
@@ -216,6 +217,7 @@ const Routes = () => {
               '/Register',
               '/RecoverPassword',
               '/PricingPlanVendor',
+              '/Dashboard'
               ]}>
               <PresentationLayout>
                 <Switch location={location} key={location.pathname}>
@@ -236,6 +238,10 @@ const Routes = () => {
                     <Route
                       path="/PricingPlanVendor"
                       component={PricingPlanVendor}
+                    />
+                    <Route
+                      path="/Dashboard"
+                      component={Dashboard}
                     />
                   </motion.div>
                 </Switch>

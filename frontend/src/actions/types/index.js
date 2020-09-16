@@ -10,19 +10,8 @@ function createRequestTypes(base) {
   return res;
 }
 
-export const GET_RENTAL_TIMES_PER_BATTERY = createRequestTypes('@dashboard/GET_RENTAL_TIMES_PER_BATTERY');
-export const GET_RENTAL_NUMBERS_PER_STATION = createRequestTypes('@dashboard/GET_RENTAL_NUMBERS_PER_STATION');
-export const GET_RENTAL_NUMBERS_PER_PLACE = createRequestTypes('@dashboard/GET_RENTAL_NUMBERS_PER_PLACE');
-export const GET_RENTAL_USAGE_PER_STATION_TYPE = createRequestTypes('@dashboard/GET_RENTAL_USAGE_PER_STATION_TYPE');
-export const GET_RENTAL_AVERAGE_DURATION = createRequestTypes('@dashboard/GET_RENTAL_AVERAGE_DURATION');
-
-export const GET_RENTAL_ANALYTICS = createRequestTypes('@dashboard/GET_RENTAL_ANALYTICS');
-
-export const GET_STATIONS = createRequestTypes('@dashboard/GET_STATIONS');
-export const REFRESH_STATIONS = createRequestTypes('@dashboard/REFRESH_STATIONS');
-export const ADD_STATION = '@dashboard/ADD_STATION';
-
-export const GET_PLACES = createRequestTypes('@dashboard/GET_PLACES');
-
+export const LOGIN = createRequestTypes('@dashboard/LOGIN');
+export const SIGNUP = createRequestTypes('@dashboard/SIGNUP');
 export const GET_USERS = createRequestTypes('@dashboard/GET_USERS');
 
+export const SET_USER = '@dashboard/SET_USER';

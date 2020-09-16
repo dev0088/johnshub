@@ -19,3 +19,12 @@ export function getUsersFailed(payload) {
     payload,
   };
 }
+
+//////////////////////////////////////////////
+
+export function setUser(userInfo) {
+  return {
+    type: types.SET_USER,
+    payload: userInfo,
+  };
+}

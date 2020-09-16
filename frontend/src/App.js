@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-// import configureStore from './config/configureStore';
+import { PersistGate } from 'redux-persist/integration/react';
 import { configureStore } from './store/configureStore';
 import { Provider } from 'react-redux';
 import Routes from './Routes';
@@ -254,18 +254,20 @@ library.add(
   faLink
 );
 
-const store = configureStore();
+const {store, persistor} = configureStore();
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <BrowserRouter basename="/">
-          <CssBaseline />
-          <ScrollToTop>
-            <Routes />
-          </ScrollToTop>
-        </BrowserRouter>
+        <PersistGate loading={null} persistor={persistor}>
+          <BrowserRouter basename="/">
+            <CssBaseline />
+            <ScrollToTop>
+              <Routes />
+            </ScrollToTop>
+          </BrowserRouter>
+        </PersistGate>
       </Provider>
     );
   }

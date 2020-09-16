@@ -30,21 +30,6 @@ import LicenseSection from '../../components/LicenseSection';
 import FooterSection from '../../components/FooterSection';
 
 const HomePage = (props) => {
-  const [state, setState] = React.useState({
-    right: false
-  });
-  const toggleDrawer = (side, open) => event => {
-    if (
-      event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
-    ) {
-      return;
-    }
-
-    setState({ ...state, [side]: open });
-  };
-  console.log('====== base URL: ', process);
-
   return (
     <Fragment>
       <div className="bg-white">
