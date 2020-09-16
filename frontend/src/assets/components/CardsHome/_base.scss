@@ -432,6 +432,9 @@
       line-height: 33px;
       color: $primary;
       text-align: center;
+      @media(max-width: 599px){
+        font-size: 22px;
+      }
     }
     .job-description {
       font-size: 20px;
@@ -446,6 +449,9 @@
       font-size: 28px;
       color: $black-900;
       text-align: center;
+      @media(max-width: 599px){
+        font-size: 22px;
+      }
     }
   }
   .see-more{
